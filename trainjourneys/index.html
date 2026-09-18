@@ -332,17 +332,6 @@
       <span class="ic go" aria-hidden="true"><span class="ms">arrow_forward</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a></section>
 
-  <section class="notes card-outlined">
-    <h3>How this was worked out</h3>
-    <ul>
-      <li>Timings come from the Indian Railways timetable in force (via erail.in) for the exact date of journey. They are scheduled times; on the day, late running moves crossings by the same amount.</li>
-      <li>A crossing is the moment the two trains pass each other. Between halts the position is interpolated, so the place is "between A and B"; when it lands inside a halt it says so.</li>
-      <li>Overtakes are shown from the timetable too. In practice an overtake happens at the station where the slower train is held, so treat the place as "near" rather than exact.</li>
-      <li>Suburban EMUs around Chennai and Delhi are left out, since they run on the separate suburban tracks. Goods trains have no public timetable and are not included.</li>
-      <li>Trains that join the route at a junction without a halt there are tracked from the junction; trains added after this page was built (last-minute specials) will not appear.</li>
-    </ul>
-  </section>
-
   <footer>Built from the timetable on Sep 18, 2026 · <a href="../itineraries/KuariPass/">Trip itinerary</a></footer>
 </div>
 <script>
