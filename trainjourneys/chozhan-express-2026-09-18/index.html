@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>22676 Chozhan SF Express · Sep 18, 2026</title>
+<script>
+  try { const t = localStorage.getItem('itinerary-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0&icon_names=arrow_back,arrow_forward,dark_mode,expand_more,fast_forward,fast_rewind,flag,light_mode,location_on,sync_alt,train&display=block" rel="stylesheet">
+<style>
+  /* Material 3 colour roles, generated around a green seed */
+  :root {
+    color-scheme: light;
+    --md-primary: #1b6b50;
+    --md-on-primary: #ffffff;
+    --md-primary-container: #a6f2cf;
+    --md-on-primary-container: #002116;
+    --md-secondary: #4c6358;
+    --md-secondary-container: #cfe9da;
+    --md-on-secondary-container: #092017;
+    --md-tertiary: #3f6374;
+    --md-tertiary-container: #c3e8fc;
+    --md-on-tertiary-container: #001f2a;
+    --md-error: #ba1a1a;
+    --md-error-container: #ffdad6;
+    --md-on-error-container: #410002;
+    --md-amber-container: #ffddb3;
+    --md-on-amber-container: #291800;
+    --md-surface: #f5fbf6;
+    --md-on-surface: #171d1a;
+    --md-on-surface-variant: #404944;
+    --md-outline: #707974;
+    --md-outline-variant: #bfc9c2;
+    --md-surface-container-lowest: #ffffff;
+    --md-surface-container-low: #eff5f0;
+    --md-surface-container: #e9efea;
+    --md-surface-container-high: #e4eae5;
+    --md-surface-container-highest: #dee4df;
+    --md-elev-1: 0 1px 2px rgba(0,0,0,.3), 0 1px 3px 1px rgba(0,0,0,.15);
+    --md-elev-2: 0 1px 2px rgba(0,0,0,.3), 0 2px 6px 2px rgba(0,0,0,.15);
+    --font: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --md-primary: #8bd6b4;
+      --md-on-primary: #003828;
+      --md-primary-container: #005139;
+      --md-on-primary-container: #a6f2cf;
+      --md-secondary: #b3ccbe;
+      --md-secondary-container: #354b41;
+      --md-on-secondary-container: #cfe9da;
+      --md-tertiary: #a7cced;
+      --md-tertiary-container: #264b5b;
+      --md-on-tertiary-container: #c3e8fc;
+      --md-error: #ffb4ab;
+      --md-error-container: #93000a;
+      --md-on-error-container: #ffdad6;
+      --md-amber-container: #633f00;
+      --md-on-amber-container: #ffddb3;
+      --md-surface: #0f1512;
+      --md-on-surface: #dee4df;
+      --md-on-surface-variant: #bfc9c2;
+      --md-outline: #89938d;
+      --md-outline-variant: #404944;
+      --md-surface-container-lowest: #0a0f0d;
+      --md-surface-container-low: #171d1a;
+      --md-surface-container: #1b211e;
+      --md-surface-container-high: #252b28;
+      --md-surface-container-highest: #303633;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --md-primary: #8bd6b4;
+    --md-on-primary: #003828;
+    --md-primary-container: #005139;
+    --md-on-primary-container: #a6f2cf;
+    --md-secondary: #b3ccbe;
+    --md-secondary-container: #354b41;
+    --md-on-secondary-container: #cfe9da;
+    --md-tertiary: #a7cced;
+    --md-tertiary-container: #264b5b;
+    --md-on-tertiary-container: #c3e8fc;
+    --md-error: #ffb4ab;
+    --md-error-container: #93000a;
+    --md-on-error-container: #ffdad6;
+    --md-amber-container: #633f00;
+    --md-on-amber-container: #ffddb3;
+    --md-surface: #0f1512;
+    --md-on-surface: #dee4df;
+    --md-on-surface-variant: #bfc9c2;
+    --md-outline: #89938d;
+    --md-outline-variant: #404944;
+    --md-surface-container-lowest: #0a0f0d;
+    --md-surface-container-low: #171d1a;
+    --md-surface-container: #1b211e;
+    --md-surface-container-high: #252b28;
+    --md-surface-container-highest: #303633;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--md-surface);
+    color: var(--md-on-surface);
+    font: 400 14px/20px var(--font);
+    letter-spacing: .25px;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color .2s, color .2s;
+  }
+
+  /* Icons: Material Symbols when the font loads, bundled SVG otherwise (offline) */
+  .ic { display: inline-grid; place-items: center; width: 24px; height: 24px; flex: none; }
+  .ic .ms {
+    display: none; font-family: "Material Symbols Rounded"; font-size: 24px; line-height: 1;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    -webkit-font-feature-settings: "liga"; font-feature-settings: "liga";
+  }
+  .ic svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .ms-ready .ic .ms { display: block; }
+  .ms-ready .ic svg { display: none; }
+  .ic.sm { width: 18px; height: 18px; }
+  .ic.sm .ms { font-size: 18px; }
+  .ic.sm svg { width: 16px; height: 16px; }
+
+  /* Top app bar */
+  .app-bar {
+    position: sticky; top: 0; z-index: 10;
+    height: 64px; display: flex; align-items: center; gap: 8px;
+    padding-inline: max(16px, calc((100% - 880px) / 2));
+    background: var(--md-surface);
+    transition: background-color .2s, box-shadow .2s;
+  }
+  .app-bar.scrolled { background: var(--md-surface-container); }
+  .app-bar h1 { font: 400 22px/28px var(--font); margin: 0; flex: 1; letter-spacing: 0; }
+  .icon-btn {
+    width: 40px; height: 40px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
+    display: grid; place-items: center; background: transparent; color: var(--md-on-surface-variant);
+    position: relative; overflow: hidden;
+  }
+  .icon-btn::before { content: ""; position: absolute; inset: 0; background: currentColor; opacity: 0; transition: opacity .15s; }
+  .icon-btn:hover::before { opacity: .08; }
+  .icon-btn:active::before { opacity: .12; }
+  .icon-btn:focus-visible { outline: 2px solid var(--md-primary); outline-offset: 2px; }
+
+  .wrap { max-width: 880px; margin: 0 auto; padding: 8px 16px 72px; }
+
+  /* Hero */
+  .hero { padding: 16px 0 24px; }
+  .overline { font: 500 14px/20px var(--font); letter-spacing: .1px; color: var(--md-primary); }
+  .hero h2 { font: 400 36px/44px var(--font); margin: 4px 0 8px; letter-spacing: 0; }
+  .hero p { font: 400 16px/24px var(--font); letter-spacing: .5px; color: var(--md-on-surface-variant); margin: 0; }
+
+  /* Outlined select (exposed dropdown) */
+  .field-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; margin: 8px 0 20px; }
+  .field { position: relative; width: 380px; max-width: 100%; }
+  .field select {
+    appearance: none; -webkit-appearance: none; width: 100%; height: 56px; cursor: pointer;
+    font: 400 16px/24px var(--font); letter-spacing: .5px; color: var(--md-on-surface);
+    background: transparent; border: 1px solid var(--md-outline); border-radius: 4px;
+    padding: 0 48px 0 16px;
+  }
+  .field select:hover { border-color: var(--md-on-surface); }
+  .field select:focus { outline: none; border: 2px solid var(--md-primary); padding-left: 15px; }
+  .field select option { background: var(--md-surface-container); color: var(--md-on-surface); }
+  .field label {
+    position: absolute; left: 12px; top: -8px; padding: 0 4px;
+    font: 400 12px/16px var(--font); letter-spacing: .4px;
+    color: var(--md-on-surface-variant); background: var(--md-surface);
+    transition: background-color .2s;
+  }
+  .field select:focus + label { color: var(--md-primary); }
+  .field .trail { position: absolute; right: 12px; top: 16px; pointer-events: none; color: var(--md-on-surface-variant); }
+  .supporting { font: 400 14px/20px var(--font); color: var(--md-on-surface-variant); }
+  .supporting b { color: var(--md-on-surface); font-weight: 500; }
+
+  /* Route chips */
+  .route { display: flex; align-items: center; gap: 4px; overflow-x: auto; padding: 4px 0 12px; scrollbar-width: thin; }
+  .chip-route {
+    flex: none; height: 32px; display: inline-flex; align-items: center; gap: 6px; padding: 0 12px;
+    border: 1px solid var(--md-outline-variant); border-radius: 8px;
+    font: 500 14px/20px var(--font); letter-spacing: .1px; color: var(--md-on-surface-variant); white-space: nowrap;
+  }
+  .chip-route.home { background: var(--md-secondary-container); color: var(--md-on-secondary-container); border-color: transparent; }
+  .chip-route.peak { background: var(--md-primary-container); color: var(--md-on-primary-container); border-color: transparent; }
+  .hop { flex: none; color: var(--md-outline); }
+
+  /* Stat cards (filled) */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(128px, 1fr)); gap: 8px; margin: 12px 0 16px; }
+  .stat { background: var(--md-surface-container-highest); border-radius: 12px; padding: 16px; }
+  .stat .n { font: 400 32px/40px var(--font); color: var(--md-on-surface); }
+  .stat .l { font: 500 12px/16px var(--font); letter-spacing: .5px; color: var(--md-on-surface-variant); }
+
+  /* Timeline: one card per stretch between halts */
+  .stretch {
+    background: var(--md-surface-container-low); border-radius: 12px; box-shadow: var(--md-elev-1);
+    margin-bottom: 12px; overflow: hidden;
+  }
+  .stretch-head { display: flex; align-items: center; gap: 16px; padding: 16px 16px 8px; }
+  .time-badge {
+    width: 64px; height: 56px; border-radius: 16px; flex: none;
+    background: var(--md-primary-container); color: var(--md-on-primary-container);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .time-badge .d { font: 500 11px/14px var(--font); letter-spacing: .5px; text-transform: uppercase; }
+  .time-badge .t { font: 500 20px/24px var(--font); }
+  .time-badge.arr { background: var(--md-tertiary-container); color: var(--md-on-tertiary-container); }
+  .stretch-head h4 { font: 500 16px/24px var(--font); letter-spacing: .15px; margin: 0; }
+  .stretch-head .sub { font: 400 14px/20px var(--font); color: var(--md-on-surface-variant); }
+  .stretch-head .sub b { font-weight: 500; color: var(--md-on-surface); }
+
+  .items { list-style: none; margin: 0; padding: 0 0 8px; }
+  .item { display: flex; gap: 16px; padding: 8px 16px; align-items: flex-start; }
+  .avatar { width: 40px; height: 40px; border-radius: 50%; flex: none; display: grid; place-items: center; }
+  .c-cross { background: var(--md-tertiary-container); color: var(--md-on-tertiary-container); }
+  .c-over  { background: var(--md-amber-container); color: var(--md-on-amber-container); }
+  .c-taken { background: var(--md-secondary-container); color: var(--md-on-secondary-container); }
+  .when { width: 48px; flex: none; padding-top: 2px; font: 500 14px/20px var(--font); letter-spacing: .1px; }
+  .when small { display: block; font: 400 11px/14px var(--font); color: var(--md-on-surface-variant); }
+  .what { min-width: 0; flex: 1; padding-top: 1px; }
+  .what .t { font: 400 16px/24px var(--font); letter-spacing: .5px; }
+  .what .t .no { font-weight: 500; }
+  .what .m { font: 400 14px/20px var(--font); letter-spacing: .25px; color: var(--md-on-surface-variant); }
+  .what .m .arrow { margin: 0 4px; }
+  .what .note { font: 400 12px/16px var(--font); letter-spacing: .4px; color: var(--md-on-surface-variant); margin-top: 2px; }
+  .chip {
+    display: inline-flex; align-items: center; height: 24px; padding: 0 8px; border-radius: 8px;
+    font: 500 12px/16px var(--font); letter-spacing: .5px; margin-left: 8px; vertical-align: 1px; white-space: nowrap;
+  }
+  .chip.halt { background: var(--md-primary-container); color: var(--md-on-primary-container); }
+  .chip.over { background: var(--md-amber-container); color: var(--md-on-amber-container); }
+  .chip.taken { background: var(--md-secondary-container); color: var(--md-on-secondary-container); }
+  .empty { padding: 4px 16px 12px; color: var(--md-on-surface-variant); font: 400 14px/20px var(--font); }
+
+  .day-sep { display: flex; align-items: center; gap: 12px; margin: 24px 4px 12px; color: var(--md-on-surface-variant); }
+  .day-sep::before, .day-sep::after { content: ""; flex: 1; height: 1px; background: var(--md-outline-variant); }
+  .day-sep span { font: 500 14px/20px var(--font); letter-spacing: .1px; }
+
+  .notes { margin-top: 32px; padding: 8px 16px 12px; }
+  .notes h3 { font: 500 16px/24px var(--font); letter-spacing: .15px; margin: 8px 0 4px; }
+  .notes ul { margin: 0; padding-left: 20px; color: var(--md-on-surface-variant); }
+  .notes li { margin: 6px 0; }
+
+  footer { margin-top: 40px; text-align: center; font: 400 12px/16px var(--font); color: var(--md-on-surface-variant); }
+  footer a { color: var(--md-primary); }
+
+  @media (max-width: 560px) {
+    .hero h2 { font-size: 28px; line-height: 36px; }
+    .field { width: 100%; }
+    .item { gap: 10px; }
+    .when { width: 44px; }
+    .chip { margin: 4px 0 0; display: flex; width: fit-content; }
+  }
+  @media print {
+    .app-bar, .field-row, .route { display: none; }
+    .stretch { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+  }
+
+  /* Journey list */
+  .journeys { display: grid; gap: 12px; margin: 8px 0 24px; }
+  .journey {
+    display: flex; align-items: center; gap: 16px; padding: 16px; text-decoration: none; color: inherit;
+    background: var(--md-surface-container-low); border-radius: 12px; box-shadow: var(--md-elev-1);
+    transition: box-shadow .15s, background-color .2s;
+  }
+  .journey:hover { box-shadow: var(--md-elev-2); background: var(--md-surface-container); }
+  .journey:focus-visible { outline: 2px solid var(--md-primary); outline-offset: 2px; }
+  .journey .jbody { flex: 1; min-width: 0; }
+  .journey .overline { font-size: 12px; line-height: 16px; }
+  .journey h3 { font: 500 16px/24px var(--font); letter-spacing: .15px; margin: 2px 0; }
+  .journey .m { font: 400 14px/20px var(--font); color: var(--md-on-surface-variant); }
+  .journey .note { font: 400 12px/16px var(--font); letter-spacing: .4px; color: var(--md-on-surface-variant); margin-top: 4px; }
+  .journey .go { color: var(--md-on-surface-variant); }
+  .date-badge {
+    width: 56px; height: 56px; border-radius: 16px; flex: none;
+    background: var(--md-primary-container); color: var(--md-on-primary-container);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .date-badge .mon { font: 500 11px/14px var(--font); letter-spacing: .5px; text-transform: uppercase; }
+  .date-badge .dnum { font: 500 22px/26px var(--font); }
+  a.icon-btn { text-decoration: none; }
+  a.icon-btn .ic { color: var(--md-on-surface-variant); }
+
+</style>
+</head>
+<body>
+<header class="app-bar" id="appbar">
+  <a class="icon-btn" href="../" aria-label="All train journeys" title="All train journeys"><span class="ic"><span class="ms">arrow_back</span><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a><h1>Train journey</h1>
+  <button class="icon-btn" id="theme" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <div class="overline">Date of journey · Fri Sep 18, 2026</div>
+    <h2>22676 Chozhan SF Express</h2>
+    <p>Tiruchchirappalli Jn 12:10 → Chennai Egmore 19:25 · Main line through the delta: Thanjavur, Kumbakonam, Mayiladuthurai, Villupuram</p>
+  </section>
+  <nav class="route" id="route" aria-label="Halts"></nav>
+  <section class="stats" id="stats"></section>
+  <main id="timeline"></main>
+
+  <section class="notes card-outlined">
+    <h3>How this was worked out</h3>
+    <ul>
+      <li>Timings come from the Indian Railways timetable in force (via erail.in) for the exact date of journey. They are scheduled times; on the day, late running moves crossings by the same amount.</li>
+      <li>A crossing is the moment the two trains pass each other. Between halts the position is interpolated, so the place is "between A and B"; when it lands inside a halt it says so.</li>
+      <li>Overtakes are shown from the timetable too. In practice an overtake happens at the station where the slower train is held, so treat the place as "near" rather than exact.</li>
+      <li>Suburban EMUs around Chennai and Delhi are left out, since they run on the separate suburban tracks. Goods trains have no public timetable and are not included.</li>
+      <li>Trains that join the route at a junction without a halt there are tracked from the junction; trains added after this page was built (last-minute specials) will not appear.</li>
+    </ul>
+  </section>
+
+  <footer>Built from the timetable on Sep 18, 2026 · <a href="../">All train journeys</a> · <a href="../../itineraries/KuariPass/">Trip itinerary</a></footer>
+</div>
+<script>
+const LEGS = [{"label":"Chozhan Express · Fri Sep 18","subtitle":"Tiruchchirappalli Jn → Chennai Egmore","blurb":"Main line through the delta: Thanjavur, Kumbakonam, Mayiladuthurai, Villupuram","train":{"no":"22676","name":"Chozhan SF Express","from":"Tiruchchirappalli Jn","to":"Chennai Egmore","dep":"12:10","arr":"19:25","date":"2026-09-18"},"halts":[{"code":"TPJ","name":"Tiruchchirappalli Jn","arr":null,"dep":"12:10","km":0.0,"date":"2026-09-18"},{"code":"TRB","name":"Tiruverumbur","arr":"12:27","dep":"12:28","km":10.0,"date":"2026-09-18"},{"code":"BAL","name":"Budalur","arr":"12:40","dep":"12:41","km":33.0,"date":"2026-09-18"},{"code":"TJ","name":"Thanjavur","arr":"12:58","dep":"13:00","km":50.0,"date":"2026-09-18"},{"code":"PML","name":"Papanasam","arr":"13:20","dep":"13:21","km":75.0,"date":"2026-09-18"},{"code":"KMU","name":"Kumbakonam","arr":"13:33","dep":"13:35","km":90.0,"date":"2026-09-18"},{"code":"ADT","name":"Aduturai","arr":"13:46","dep":"13:47","km":101.0,"date":"2026-09-18"},{"code":"MV","name":"Mayiladuturai Jn","arr":"14:08","dep":"14:10","km":121.0,"date":"2026-09-18"},{"code":"VDL","name":"Vaithisvarankoil","arr":"14:25","dep":"14:26","km":135.0,"date":"2026-09-18"},{"code":"SY","name":"Sirkazhi","arr":"14:34","dep":"14:35","km":141.0,"date":"2026-09-18"},{"code":"CDM","name":"Chidambaram","arr":"14:51","dep":"14:53","km":158.0,"date":"2026-09-18"},{"code":"CUPJ","name":"Cuddalore Port Jn","arr":"15:20","dep":"15:21","km":196.0,"date":"2026-09-18"},{"code":"TDPR","name":"Tiruppadirippuliyur","arr":"15:28","dep":"15:29","km":200.0,"date":"2026-09-18"},{"code":"PRT","name":"Panruti","arr":"15:47","dep":"15:48","km":223.0,"date":"2026-09-18"},{"code":"VM","name":"Villupuram Jn","arr":"16:35","dep":"16:40","km":243.0,"date":"2026-09-18"},{"code":"TMV","name":"Tindivanam","arr":"16:58","dep":"17:00","km":280.0,"date":"2026-09-18"},{"code":"MLMR","name":"Melmaruvathur","arr":"17:23","dep":"17:25","km":310.0,"date":"2026-09-18"},{"code":"CGL","name":"Chengalpattu Jn","arr":"17:53","dep":"17:55","km":345.0,"date":"2026-09-18"},{"code":"TBM","name":"Tambaram","arr":"18:23","dep":"18:25","km":376.0,"date":"2026-09-18"},{"code":"MS","name":"Chennai Egmore","arr":"19:25","dep":null,"km":401.0,"date":"2026-09-18"}],"events":[{"date":"2026-09-18","time":"13:19","km":73.8,"at":null,"between":["PDV","PML"],"halted":null,"kind":"crossing","who":null,"no":"16847","name":"MV SCT Express","src":"MV","dst":"SCT","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-18","time":"13:28","km":83.6,"at":"SWI","between":null,"halted":null,"kind":"crossing","who":null,"no":"22675","name":"Chozhan SF Express","src":"MS","dst":"TPJ","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"13:45","km":100.0,"at":null,"between":["TDR","ADT"],"halted":null,"kind":"overtake","who":"user","no":"06874","name":"TJ MV Express Special","src":"TJ","dst":"MV","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-18","time":"15:24","km":198.0,"at":null,"between":["CUPJ","TDPR"],"halted":null,"kind":"crossing","who":null,"no":"56875","name":"VM MV Passenger","src":"VM","dst":"MV","type":"ORDINARY","leapfrog":null,"since":null},{"date":"2026-09-18","time":"15:31","km":202.1,"at":null,"between":["TDPR","VKP"],"halted":null,"kind":"crossing","who":null,"no":"66019","name":"VM MV MEMU","src":"VM","dst":"MV","type":"ORDINARY","leapfrog":null,"since":null},{"date":"2026-09-18","time":"16:19","km":236.4,"at":null,"between":["SXR","VM"],"halted":null,"kind":"crossing","who":null,"no":"22614","name":"AYC RMM SF Express","src":"AYC","dst":"RMM","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"16:42","km":247.4,"at":null,"between":["VM","MYP"],"halted":null,"kind":"overtake","who":"user","no":"66052","name":"PDY MS MEMU Passenger","src":"PDY","dst":"MS","type":"ORDINARY","leapfrog":null,"since":null},{"date":"2026-09-18","time":"16:48","km":260.4,"at":null,"between":["VVN","PEI"],"halted":null,"kind":"crossing","who":null,"no":"20665","name":"TEN Vande Bharat","src":"MS","dst":"TEN","type":"SHATABDI","leapfrog":null,"since":null},{"date":"2026-09-18","time":"16:56","km":275.9,"at":null,"between":["MTL","TMV"],"halted":null,"kind":"crossing","who":null,"no":"16807","name":"TBM TPJ Express","src":"TBM","dst":"TPJ","type":"MAIL EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-18","time":"17:13","km":296.4,"at":null,"between":["OLA","TZD"],"halted":null,"kind":"crossing","who":null,"no":"12605","name":"Pallavan SF Express","src":"MS","dst":"KKDI","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"17:17","km":302.0,"at":null,"between":["TZD","ACK"],"halted":null,"kind":"crossing","who":null,"no":"19419","name":"ADI TPJ Express","src":"ADI","dst":"TPJ","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-18","time":"17:22","km":308.0,"at":null,"between":["ACK","MLMR"],"halted":null,"kind":"crossing","who":null,"no":"20605","name":"MS TCN SF Express","src":"MS","dst":"TCN","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"17:27","km":312.1,"at":null,"between":["MLMR","MMK"],"halted":null,"kind":"crossing","who":null,"no":"16105","name":"Tiruchendur Express","src":"MS","dst":"TCN","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-18","time":"17:32","km":319.2,"at":null,"between":["MLMR","MMK"],"halted":null,"kind":"crossing","who":null,"no":"12652","name":"Sampark Kranti Express","src":"NZM","dst":"MDU","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"17:49","km":340.1,"at":null,"between":["OV","CGL"],"halted":null,"kind":"crossing","who":null,"no":"16101","name":"MS QLN Express","src":"TBM","dst":"QLN","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-18","time":"17:52","km":343.5,"at":null,"between":["OV","CGL"],"halted":null,"kind":"overtake","who":"user","no":"16112","name":"PDY TPTY MEMU Express","src":"PDY","dst":"TPTY","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-18","time":"18:04","km":355.3,"at":null,"between":["SKL","MMNK"],"halted":null,"kind":"crossing","who":null,"no":"12633","name":"Kanyakumari Express","src":"MS","dst":"CAPE","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"18:16","km":368.8,"at":null,"between":["UPM","VDR"],"halted":null,"kind":"crossing","who":null,"no":"16103","name":"TBM RMM Express","src":"TBM","dst":"RMM","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-18","time":"18:16","km":368.1,"at":null,"between":["UPM","VDR"],"halted":null,"kind":"crossing","who":null,"no":"66055","name":"TBM VM MEMU Passenger","src":"TBM","dst":"VM","type":"ORDINARY","leapfrog":null,"since":null},{"date":"2026-09-18","time":"18:22","km":375.4,"at":"TBM","between":null,"halted":null,"kind":"crossing","who":null,"no":"22661","name":"MS RMM SF Express","src":"MS","dst":"RMM","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"18:35","km":380.1,"at":"CMP","between":null,"halted":null,"kind":"crossing","who":null,"no":"16115","name":"MS PDY Express","src":"MS","dst":"PDY","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-18","time":"19:18","km":398.1,"at":null,"between":["NBK","MSC"],"halted":null,"kind":"crossing","who":null,"no":"12693","name":"Pearl City Express","src":"MS","dst":"TN","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"19:18","km":398.2,"at":null,"between":["NBK","MSC"],"halted":null,"kind":"crossing","who":null,"no":"16851","name":"MS RMM Express","src":"MS","dst":"RMM","type":"MAIL_EXPRESS","leapfrog":null,"since":null}],"names":{"TJ":"Thanjavur","SWI":"Swamimalai","CGL":"Chengalpattu Jn","SKL":"Singaperumalkoil","TN":"Tuticorin","MTL":"Mailam","TCN":"Tiruchendur","OV":"Ottivakkam","MSC":"Chennai Chetpat","NZM":"Hazrat Nizamuddin","TPJ":"Tiruchchirappalli Jn","ACK":"Acharapakkam","VDR":"Vandalur","TEN":"Tirunelveli","PML":"Papanasam","QLN":"Kollam Jn","MYP":"Mundiyampakkam","TPTY":"Tirupati","VM":"Villupuram Jn","PEI":"Perani","TBM":"Tambaram","MS":"Chennai Egmore","PDV":"Pandaravadai","TMV":"Tindivanam","MV":"Mayiladuturai Jn","ADI":"Ahmedabad Jn","CAPE":"Kanniyakumari","VKP":"Varakalpattu","SCT":"Sengottai","SXR":"Serndanur","KKDI":"Karaikkudi Jn","TZD":"Tozhuppedu","RMM":"Rameswaram","UPM":"Urappakkam","VVN":"Vikravandi","PDY":"Pondicherry","MMNK":"Maraimalai Nagar Kamarajar","AYC":"Ayodhya Cantt","OLA":"Olakur","ADT":"Aduturai","CMP":"Chromepet","CUPJ":"Cuddalore Port Jn","MLMR":"Melmaruvathur","NBK":"Nungambakkam","TDPR":"Tiruppadirippuliyur","MDU":"Madurai Jn","MMK":"Madurantakam","TDR":"Tiruvidaimarudur","TRB":"Tiruverumbur","BAL":"Budalur","KMU":"Kumbakonam","VDL":"Vaithisvarankoil","SY":"Sirkazhi","CDM":"Chidambaram","PRT":"Panruti"},"slug":"chozhan-express-2026-09-18"}];
+/* ---------- Icons: Material Symbols ligature with a bundled SVG fallback ---------- */
+const ICONS = {
+  train:   ['train', '<rect x="6" y="3" width="12" height="14" rx="3"/><path d="M6 10h12M9 17l-2.5 4M15 17l2.5 4M8 21h8"/>'],
+  cross:   ['sync_alt', '<path d="M4 8h15l-3.5-3.5M20 16H5l3.5 3.5"/>'],
+  over:    ['fast_forward', '<path d="M4 6v12l8-6zM12 6v12l8-6z"/>'],
+  taken:   ['fast_rewind', '<path d="M20 6v12l-8-6zM12 6v12l-8-6z"/>'],
+  flag:    ['flag', '<path d="M6 21V4h11l-1.5 4L17 12H6"/>'],
+  pin:     ['location_on', '<path d="M12 21s-7-6.2-7-11.2a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/>'],
+  sun:     ['light_mode', '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'],
+  moon:    ['dark_mode', '<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>'],
+  expand:  ['expand_more', '<path d="M6 9l6 6 6-6"/>']
+};
+const ic = (name, sm) =>
+  `<span class="ic${sm ? ' sm' : ''}" aria-hidden="true"><span class="ms">${ICONS[name][0]}</span><svg viewBox="0 0 24 24">${ICONS[name][1]}</svg></span>`;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const DOW = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+function fdate(iso, withDow) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const dt = new Date(y, m - 1, d);
+  return (withDow ? DOW[dt.getDay()] + ' ' : '') + MON[m - 1] + ' ' + d;
+}
+function mins(iso, hm) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const [h, mi] = hm.split(':').map(Number);
+  return Math.round(Date.UTC(y, m - 1, d, h, mi) / 60000);
+}
+function dur(m) { const h = Math.floor(m / 60), r = m % 60; return h ? (r ? `${h} h ${r} min` : `${h} h`) : `${r} min`; }
+const sname = (leg, code) => leg.names[code] || code;
+
+/* ---------- Leg selector ---------- */
+let current = 0;
+
+function render() {
+  const leg = LEGS[current];
+  const tr = leg.train;
+  const h0 = leg.halts[0], hN = leg.halts[leg.halts.length - 1];
+  const total = mins(hN.date, hN.arr) - mins(h0.date, h0.dep);
+
+  // halts as chips
+  document.getElementById('route').innerHTML = leg.halts.map((h, i) =>
+    `<span class="chip-route${i === 0 ? ' home' : i === leg.halts.length - 1 ? ' peak' : ''}" title="${esc(h.name)}">${esc(h.code)}</span>` +
+    (i < leg.halts.length - 1 ? '<span class="hop">›</span>' : '')).join('');
+
+  const crossings = leg.events.filter(e => e.kind === 'crossing');
+  const over = leg.events.filter(e => e.kind === 'overtake');
+  document.getElementById('stats').innerHTML = [
+    [crossings.length, 'Crossings'],
+    [over.length, 'Overtakes'],
+    [Math.round(hN.km - h0.km) + ' km', 'Distance'],
+    [dur(total), 'On the train']
+  ].map(([n, l]) => `<div class="stat"><div class="n">${esc(n)}</div><div class="l">${esc(l)}</div></div>`).join('');
+
+  // group events by stretch between consecutive halts
+  const tl = document.getElementById('timeline');
+  let html = '', lastDay = null;
+  for (let i = 0; i < leg.halts.length; i++) {
+    const h = leg.halts[i], next = leg.halts[i + 1];
+    if (h.date !== lastDay) { html += `<div class="day-sep"><span>${fdate(h.date, true)}</span></div>`; lastDay = h.date; }
+    const depM = h.dep ? mins(h.date, h.dep) : null;
+    if (!next) {
+      html += `<section class="stretch"><div class="stretch-head">
+        <div class="time-badge arr"><span class="d">arr</span><span class="t">${esc(h.arr)}</span></div>
+        <div><h4>${esc(h.name)}</h4><div class="sub">Journey's end · ${Math.round(h.km - h0.km)} km from ${esc(h0.name)}</div></div>
+      </div></section>`;
+      break;
+    }
+    const arrM = mins(next.date, next.arr);
+    const evs = leg.events.filter(e => { const m = mins(e.date, e.time); return m >= (h.arr ? mins(h.date, h.arr) : depM) && m < arrM; });
+    const halt = h.arr && h.dep ? `halt ${dur(mins(h.date, h.dep) - mins(h.date, h.arr))}` : '';
+    html += `<section class="stretch"><div class="stretch-head">
+      <div class="time-badge"><span class="d">dep</span><span class="t">${esc(h.dep)}</span></div>
+      <div><h4>${esc(h.name)}${i > 0 && h.arr ? ` <span class="sub">arr ${esc(h.arr)}${halt ? ', ' + halt : ''}</span>` : ''}</h4>
+      <div class="sub">to <b>${esc(next.name)}</b> · ${Math.round(next.km - h.km)} km · ${dur(arrM - depM)} · ${evs.length ? evs.length + (evs.length === 1 ? ' train' : ' trains') : 'nothing scheduled'}</div></div>
+    </div>`;
+    if (evs.length) {
+      html += '<ul class="items">' + evs.map(e => item(leg, e, h)).join('') + '</ul>';
+    } else {
+      html += '<div class="empty">No scheduled crossing on this stretch.</div>';
+    }
+    html += '</section>';
+  }
+  tl.innerHTML = html;
+}
+
+function item(leg, e, h) {
+  const cross = e.kind === 'crossing';
+  const cls = cross ? 'c-cross' : (e.who === 'user' ? 'c-over' : 'c-taken');
+  const icon = cross ? 'cross' : (e.who === 'user' ? 'over' : 'taken');
+  let where;
+  if (e.halted) where = `at ${esc(sname(leg, e.halted))}, while you are halted`;
+  else if (e.at) where = `at ${esc(sname(leg, e.at))}`;
+  else if (e.between) where = `between ${esc(sname(leg, e.between[0]))} and ${esc(sname(leg, e.between[1]))}`;
+  else where = '';
+  if (!cross) where = where.replace(/^between (.*) and (.*)$/, 'near $1');
+  const chip = cross ? (e.halted ? '<span class="chip halt">At your halt</span>' : '')
+                     : (e.who === 'user' ? '<span class="chip over">You overtake it</span>' : '<span class="chip taken">It overtakes you</span>');
+  if (e.leapfrog) where += ` · the timetable has you passing each other ${e.leapfrog} times since ${esc(e.since)}; this is the last`;
+  const dateNote = e.date !== h.date ? `<small>${fdate(e.date)}</small>` : '';
+  return `<li class="item">
+    <div class="avatar ${cls}">${ic(icon)}</div>
+    <div class="when">${esc(e.time)}${dateNote}</div>
+    <div class="what">
+      <div class="t"><span class="no">${esc(e.no)}</span> ${esc(e.name)}${chip}</div>
+      <div class="m">${esc(sname(leg, e.src))}<span class="arrow">→</span>${esc(sname(leg, e.dst))}</div>
+      <div class="note">${where}</div>
+    </div>
+  </li>`;
+}
+
+/* ---------- Theme toggle & app bar shadow ---------- */
+const themeBtn = document.getElementById('theme');
+function paintTheme() {
+  const dark = document.documentElement.dataset.theme === 'dark' ||
+    (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+  themeBtn.innerHTML = ic(dark ? 'sun' : 'moon');
+}
+themeBtn.addEventListener('click', () => {
+  const dark = document.documentElement.dataset.theme === 'dark' ||
+    (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+  document.documentElement.dataset.theme = dark ? 'light' : 'dark';
+  try { localStorage.setItem('itinerary-theme', document.documentElement.dataset.theme); } catch (e) {}
+  paintTheme();
+});
+paintTheme();
+addEventListener('scroll', () => document.getElementById('appbar').classList.toggle('scrolled', scrollY > 4), { passive: true });
+if (document.fonts) document.fonts.load('24px "Material Symbols Rounded"').then(f => { if (f.length) document.documentElement.classList.add('ms-ready'); }).catch(() => {});
+render();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>12621 Tamilnadu SF Express · Sep 18, 2026</title>
+<script>
+  try { const t = localStorage.getItem('itinerary-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0&icon_names=arrow_back,arrow_forward,dark_mode,expand_more,fast_forward,fast_rewind,flag,light_mode,location_on,sync_alt,train&display=block" rel="stylesheet">
+<style>
+  /* Material 3 colour roles, generated around a green seed */
+  :root {
+    color-scheme: light;
+    --md-primary: #1b6b50;
+    --md-on-primary: #ffffff;
+    --md-primary-container: #a6f2cf;
+    --md-on-primary-container: #002116;
+    --md-secondary: #4c6358;
+    --md-secondary-container: #cfe9da;
+    --md-on-secondary-container: #092017;
+    --md-tertiary: #3f6374;
+    --md-tertiary-container: #c3e8fc;
+    --md-on-tertiary-container: #001f2a;
+    --md-error: #ba1a1a;
+    --md-error-container: #ffdad6;
+    --md-on-error-container: #410002;
+    --md-amber-container: #ffddb3;
+    --md-on-amber-container: #291800;
+    --md-surface: #f5fbf6;
+    --md-on-surface: #171d1a;
+    --md-on-surface-variant: #404944;
+    --md-outline: #707974;
+    --md-outline-variant: #bfc9c2;
+    --md-surface-container-lowest: #ffffff;
+    --md-surface-container-low: #eff5f0;
+    --md-surface-container: #e9efea;
+    --md-surface-container-high: #e4eae5;
+    --md-surface-container-highest: #dee4df;
+    --md-elev-1: 0 1px 2px rgba(0,0,0,.3), 0 1px 3px 1px rgba(0,0,0,.15);
+    --md-elev-2: 0 1px 2px rgba(0,0,0,.3), 0 2px 6px 2px rgba(0,0,0,.15);
+    --font: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --md-primary: #8bd6b4;
+      --md-on-primary: #003828;
+      --md-primary-container: #005139;
+      --md-on-primary-container: #a6f2cf;
+      --md-secondary: #b3ccbe;
+      --md-secondary-container: #354b41;
+      --md-on-secondary-container: #cfe9da;
+      --md-tertiary: #a7cced;
+      --md-tertiary-container: #264b5b;
+      --md-on-tertiary-container: #c3e8fc;
+      --md-error: #ffb4ab;
+      --md-error-container: #93000a;
+      --md-on-error-container: #ffdad6;
+      --md-amber-container: #633f00;
+      --md-on-amber-container: #ffddb3;
+      --md-surface: #0f1512;
+      --md-on-surface: #dee4df;
+      --md-on-surface-variant: #bfc9c2;
+      --md-outline: #89938d;
+      --md-outline-variant: #404944;
+      --md-surface-container-lowest: #0a0f0d;
+      --md-surface-container-low: #171d1a;
+      --md-surface-container: #1b211e;
+      --md-surface-container-high: #252b28;
+      --md-surface-container-highest: #303633;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --md-primary: #8bd6b4;
+    --md-on-primary: #003828;
+    --md-primary-container: #005139;
+    --md-on-primary-container: #a6f2cf;
+    --md-secondary: #b3ccbe;
+    --md-secondary-container: #354b41;
+    --md-on-secondary-container: #cfe9da;
+    --md-tertiary: #a7cced;
+    --md-tertiary-container: #264b5b;
+    --md-on-tertiary-container: #c3e8fc;
+    --md-error: #ffb4ab;
+    --md-error-container: #93000a;
+    --md-on-error-container: #ffdad6;
+    --md-amber-container: #633f00;
+    --md-on-amber-container: #ffddb3;
+    --md-surface: #0f1512;
+    --md-on-surface: #dee4df;
+    --md-on-surface-variant: #bfc9c2;
+    --md-outline: #89938d;
+    --md-outline-variant: #404944;
+    --md-surface-container-lowest: #0a0f0d;
+    --md-surface-container-low: #171d1a;
+    --md-surface-container: #1b211e;
+    --md-surface-container-high: #252b28;
+    --md-surface-container-highest: #303633;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--md-surface);
+    color: var(--md-on-surface);
+    font: 400 14px/20px var(--font);
+    letter-spacing: .25px;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color .2s, color .2s;
+  }
+
+  /* Icons: Material Symbols when the font loads, bundled SVG otherwise (offline) */
+  .ic { display: inline-grid; place-items: center; width: 24px; height: 24px; flex: none; }
+  .ic .ms {
+    display: none; font-family: "Material Symbols Rounded"; font-size: 24px; line-height: 1;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    -webkit-font-feature-settings: "liga"; font-feature-settings: "liga";
+  }
+  .ic svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .ms-ready .ic .ms { display: block; }
+  .ms-ready .ic svg { display: none; }
+  .ic.sm { width: 18px; height: 18px; }
+  .ic.sm .ms { font-size: 18px; }
+  .ic.sm svg { width: 16px; height: 16px; }
+
+  /* Top app bar */
+  .app-bar {
+    position: sticky; top: 0; z-index: 10;
+    height: 64px; display: flex; align-items: center; gap: 8px;
+    padding-inline: max(16px, calc((100% - 880px) / 2));
+    background: var(--md-surface);
+    transition: background-color .2s, box-shadow .2s;
+  }
+  .app-bar.scrolled { background: var(--md-surface-container); }
+  .app-bar h1 { font: 400 22px/28px var(--font); margin: 0; flex: 1; letter-spacing: 0; }
+  .icon-btn {
+    width: 40px; height: 40px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
+    display: grid; place-items: center; background: transparent; color: var(--md-on-surface-variant);
+    position: relative; overflow: hidden;
+  }
+  .icon-btn::before { content: ""; position: absolute; inset: 0; background: currentColor; opacity: 0; transition: opacity .15s; }
+  .icon-btn:hover::before { opacity: .08; }
+  .icon-btn:active::before { opacity: .12; }
+  .icon-btn:focus-visible { outline: 2px solid var(--md-primary); outline-offset: 2px; }
+
+  .wrap { max-width: 880px; margin: 0 auto; padding: 8px 16px 72px; }
+
+  /* Hero */
+  .hero { padding: 16px 0 24px; }
+  .overline { font: 500 14px/20px var(--font); letter-spacing: .1px; color: var(--md-primary); }
+  .hero h2 { font: 400 36px/44px var(--font); margin: 4px 0 8px; letter-spacing: 0; }
+  .hero p { font: 400 16px/24px var(--font); letter-spacing: .5px; color: var(--md-on-surface-variant); margin: 0; }
+
+  /* Outlined select (exposed dropdown) */
+  .field-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; margin: 8px 0 20px; }
+  .field { position: relative; width: 380px; max-width: 100%; }
+  .field select {
+    appearance: none; -webkit-appearance: none; width: 100%; height: 56px; cursor: pointer;
+    font: 400 16px/24px var(--font); letter-spacing: .5px; color: var(--md-on-surface);
+    background: transparent; border: 1px solid var(--md-outline); border-radius: 4px;
+    padding: 0 48px 0 16px;
+  }
+  .field select:hover { border-color: var(--md-on-surface); }
+  .field select:focus { outline: none; border: 2px solid var(--md-primary); padding-left: 15px; }
+  .field select option { background: var(--md-surface-container); color: var(--md-on-surface); }
+  .field label {
+    position: absolute; left: 12px; top: -8px; padding: 0 4px;
+    font: 400 12px/16px var(--font); letter-spacing: .4px;
+    color: var(--md-on-surface-variant); background: var(--md-surface);
+    transition: background-color .2s;
+  }
+  .field select:focus + label { color: var(--md-primary); }
+  .field .trail { position: absolute; right: 12px; top: 16px; pointer-events: none; color: var(--md-on-surface-variant); }
+  .supporting { font: 400 14px/20px var(--font); color: var(--md-on-surface-variant); }
+  .supporting b { color: var(--md-on-surface); font-weight: 500; }
+
+  /* Route chips */
+  .route { display: flex; align-items: center; gap: 4px; overflow-x: auto; padding: 4px 0 12px; scrollbar-width: thin; }
+  .chip-route {
+    flex: none; height: 32px; display: inline-flex; align-items: center; gap: 6px; padding: 0 12px;
+    border: 1px solid var(--md-outline-variant); border-radius: 8px;
+    font: 500 14px/20px var(--font); letter-spacing: .1px; color: var(--md-on-surface-variant); white-space: nowrap;
+  }
+  .chip-route.home { background: var(--md-secondary-container); color: var(--md-on-secondary-container); border-color: transparent; }
+  .chip-route.peak { background: var(--md-primary-container); color: var(--md-on-primary-container); border-color: transparent; }
+  .hop { flex: none; color: var(--md-outline); }
+
+  /* Stat cards (filled) */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(128px, 1fr)); gap: 8px; margin: 12px 0 16px; }
+  .stat { background: var(--md-surface-container-highest); border-radius: 12px; padding: 16px; }
+  .stat .n { font: 400 32px/40px var(--font); color: var(--md-on-surface); }
+  .stat .l { font: 500 12px/16px var(--font); letter-spacing: .5px; color: var(--md-on-surface-variant); }
+
+  /* Timeline: one card per stretch between halts */
+  .stretch {
+    background: var(--md-surface-container-low); border-radius: 12px; box-shadow: var(--md-elev-1);
+    margin-bottom: 12px; overflow: hidden;
+  }
+  .stretch-head { display: flex; align-items: center; gap: 16px; padding: 16px 16px 8px; }
+  .time-badge {
+    width: 64px; height: 56px; border-radius: 16px; flex: none;
+    background: var(--md-primary-container); color: var(--md-on-primary-container);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .time-badge .d { font: 500 11px/14px var(--font); letter-spacing: .5px; text-transform: uppercase; }
+  .time-badge .t { font: 500 20px/24px var(--font); }
+  .time-badge.arr { background: var(--md-tertiary-container); color: var(--md-on-tertiary-container); }
+  .stretch-head h4 { font: 500 16px/24px var(--font); letter-spacing: .15px; margin: 0; }
+  .stretch-head .sub { font: 400 14px/20px var(--font); color: var(--md-on-surface-variant); }
+  .stretch-head .sub b { font-weight: 500; color: var(--md-on-surface); }
+
+  .items { list-style: none; margin: 0; padding: 0 0 8px; }
+  .item { display: flex; gap: 16px; padding: 8px 16px; align-items: flex-start; }
+  .avatar { width: 40px; height: 40px; border-radius: 50%; flex: none; display: grid; place-items: center; }
+  .c-cross { background: var(--md-tertiary-container); color: var(--md-on-tertiary-container); }
+  .c-over  { background: var(--md-amber-container); color: var(--md-on-amber-container); }
+  .c-taken { background: var(--md-secondary-container); color: var(--md-on-secondary-container); }
+  .when { width: 48px; flex: none; padding-top: 2px; font: 500 14px/20px var(--font); letter-spacing: .1px; }
+  .when small { display: block; font: 400 11px/14px var(--font); color: var(--md-on-surface-variant); }
+  .what { min-width: 0; flex: 1; padding-top: 1px; }
+  .what .t { font: 400 16px/24px var(--font); letter-spacing: .5px; }
+  .what .t .no { font-weight: 500; }
+  .what .m { font: 400 14px/20px var(--font); letter-spacing: .25px; color: var(--md-on-surface-variant); }
+  .what .m .arrow { margin: 0 4px; }
+  .what .note { font: 400 12px/16px var(--font); letter-spacing: .4px; color: var(--md-on-surface-variant); margin-top: 2px; }
+  .chip {
+    display: inline-flex; align-items: center; height: 24px; padding: 0 8px; border-radius: 8px;
+    font: 500 12px/16px var(--font); letter-spacing: .5px; margin-left: 8px; vertical-align: 1px; white-space: nowrap;
+  }
+  .chip.halt { background: var(--md-primary-container); color: var(--md-on-primary-container); }
+  .chip.over { background: var(--md-amber-container); color: var(--md-on-amber-container); }
+  .chip.taken { background: var(--md-secondary-container); color: var(--md-on-secondary-container); }
+  .empty { padding: 4px 16px 12px; color: var(--md-on-surface-variant); font: 400 14px/20px var(--font); }
+
+  .day-sep { display: flex; align-items: center; gap: 12px; margin: 24px 4px 12px; color: var(--md-on-surface-variant); }
+  .day-sep::before, .day-sep::after { content: ""; flex: 1; height: 1px; background: var(--md-outline-variant); }
+  .day-sep span { font: 500 14px/20px var(--font); letter-spacing: .1px; }
+
+  .notes { margin-top: 32px; padding: 8px 16px 12px; }
+  .notes h3 { font: 500 16px/24px var(--font); letter-spacing: .15px; margin: 8px 0 4px; }
+  .notes ul { margin: 0; padding-left: 20px; color: var(--md-on-surface-variant); }
+  .notes li { margin: 6px 0; }
+
+  footer { margin-top: 40px; text-align: center; font: 400 12px/16px var(--font); color: var(--md-on-surface-variant); }
+  footer a { color: var(--md-primary); }
+
+  @media (max-width: 560px) {
+    .hero h2 { font-size: 28px; line-height: 36px; }
+    .field { width: 100%; }
+    .item { gap: 10px; }
+    .when { width: 44px; }
+    .chip { margin: 4px 0 0; display: flex; width: fit-content; }
+  }
+  @media print {
+    .app-bar, .field-row, .route { display: none; }
+    .stretch { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+  }
+
+  /* Journey list */
+  .journeys { display: grid; gap: 12px; margin: 8px 0 24px; }
+  .journey {
+    display: flex; align-items: center; gap: 16px; padding: 16px; text-decoration: none; color: inherit;
+    background: var(--md-surface-container-low); border-radius: 12px; box-shadow: var(--md-elev-1);
+    transition: box-shadow .15s, background-color .2s;
+  }
+  .journey:hover { box-shadow: var(--md-elev-2); background: var(--md-surface-container); }
+  .journey:focus-visible { outline: 2px solid var(--md-primary); outline-offset: 2px; }
+  .journey .jbody { flex: 1; min-width: 0; }
+  .journey .overline { font-size: 12px; line-height: 16px; }
+  .journey h3 { font: 500 16px/24px var(--font); letter-spacing: .15px; margin: 2px 0; }
+  .journey .m { font: 400 14px/20px var(--font); color: var(--md-on-surface-variant); }
+  .journey .note { font: 400 12px/16px var(--font); letter-spacing: .4px; color: var(--md-on-surface-variant); margin-top: 4px; }
+  .journey .go { color: var(--md-on-surface-variant); }
+  .date-badge {
+    width: 56px; height: 56px; border-radius: 16px; flex: none;
+    background: var(--md-primary-container); color: var(--md-on-primary-container);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .date-badge .mon { font: 500 11px/14px var(--font); letter-spacing: .5px; text-transform: uppercase; }
+  .date-badge .dnum { font: 500 22px/26px var(--font); }
+  a.icon-btn { text-decoration: none; }
+  a.icon-btn .ic { color: var(--md-on-surface-variant); }
+
+</style>
+</head>
+<body>
+<header class="app-bar" id="appbar">
+  <a class="icon-btn" href="../" aria-label="All train journeys" title="All train journeys"><span class="ic"><span class="ms">arrow_back</span><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a><h1>Train journey</h1>
+  <button class="icon-btn" id="theme" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <div class="overline">Date of journey · Fri Sep 18, 2026</div>
+    <h2>12621 Tamilnadu SF Express</h2>
+    <p>Chennai Central 22:00 → New Delhi 06:30 on Sun Sep 20, 2026 · Grand Trunk route: Vijayawada, Warangal, Nagpur, Bhopal, Jhansi, Agra</p>
+  </section>
+  <nav class="route" id="route" aria-label="Halts"></nav>
+  <section class="stats" id="stats"></section>
+  <main id="timeline"></main>
+
+  <section class="notes card-outlined">
+    <h3>How this was worked out</h3>
+    <ul>
+      <li>Timings come from the Indian Railways timetable in force (via erail.in) for the exact date of journey. They are scheduled times; on the day, late running moves crossings by the same amount.</li>
+      <li>A crossing is the moment the two trains pass each other. Between halts the position is interpolated, so the place is "between A and B"; when it lands inside a halt it says so.</li>
+      <li>Overtakes are shown from the timetable too. In practice an overtake happens at the station where the slower train is held, so treat the place as "near" rather than exact.</li>
+      <li>Suburban EMUs around Chennai and Delhi are left out, since they run on the separate suburban tracks. Goods trains have no public timetable and are not included.</li>
+      <li>Trains that join the route at a junction without a halt there are tracked from the junction; trains added after this page was built (last-minute specials) will not appear.</li>
+    </ul>
+  </section>
+
+  <footer>Built from the timetable on Sep 18, 2026 · <a href="../">All train journeys</a> · <a href="../../itineraries/KuariPass/">Trip itinerary</a></footer>
+</div>
+<script>
+const LEGS = [{"label":"Tamil Nadu Express · Sep 18–20","subtitle":"Chennai Central → New Delhi","blurb":"Grand Trunk route: Vijayawada, Warangal, Nagpur, Bhopal, Jhansi, Agra","train":{"no":"12621","name":"Tamilnadu SF Express","from":"Chennai Central","to":"New Delhi","dep":"22:00","arr":"06:30","date":"2026-09-18"},"halts":[{"code":"MAS","name":"Chennai Central","arr":null,"dep":"22:00","km":0.0,"date":"2026-09-18"},{"code":"BZA","name":"Vijayawada Jn","arr":"03:40","dep":"03:50","km":431.0,"date":"2026-09-19"},{"code":"KMT","name":"Khammam","arr":"05:19","dep":"05:20","km":530.0,"date":"2026-09-19"},{"code":"WL","name":"Warangal","arr":"06:53","dep":"06:55","km":638.0,"date":"2026-09-19"},{"code":"BPQ","name":"Balharshah Jn","arr":"10:30","dep":"10:35","km":880.0,"date":"2026-09-19"},{"code":"NGP","name":"Nagpur Jn","arr":"13:45","dep":"13:50","km":1091.0,"date":"2026-09-19"},{"code":"ET","name":"Itarsi Jn","arr":"18:30","dep":"18:35","km":1388.0,"date":"2026-09-19"},{"code":"BPL","name":"Bhopal Jn","arr":"20:10","dep":"20:20","km":1487.0,"date":"2026-09-19"},{"code":"VGLJ","name":"Jhansi (Virangana Lakshmibai)","arr":"00:26","dep":"00:31","km":1778.0,"date":"2026-09-20"},{"code":"GWL","name":"Gwalior Jn","arr":"01:32","dep":"01:34","km":1875.0,"date":"2026-09-20"},{"code":"AGC","name":"Agra Cantt","arr":"03:05","dep":"03:07","km":1993.0,"date":"2026-09-20"},{"code":"NZM","name":"Hazrat Nizamuddin","arr":"06:00","dep":"06:02","km":2180.0,"date":"2026-09-20"},{"code":"NDLS","name":"New Delhi","arr":"06:30","dep":null,"km":2188.0,"date":"2026-09-20"}],"events":[{"date":"2026-09-18","time":"22:16","km":19.8,"at":"AIPP","between":null,"halted":null,"kind":"crossing","who":null,"no":"12511","name":"Raptisagar Express","src":"GKP","dst":"TVCN","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"22:20","km":25.1,"at":null,"between":["NPKM","MJR"],"halted":null,"kind":"crossing","who":null,"no":"66032","name":"SPE MASS MEMU Passenger","src":"SPE","dst":"MASS","type":"ORDINARY","leapfrog":null,"since":null},{"date":"2026-09-18","time":"22:21","km":26.8,"at":"MJR","between":null,"halted":null,"kind":"crossing","who":null,"no":"12078","name":"Jan Shatabdi","src":"BZA","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"22:26","km":32.7,"at":null,"between":["APB","PON"],"halted":null,"kind":"crossing","who":null,"no":"20626","name":"BGKT MAS SF Express","src":"BGKT","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-18","time":"22:28","km":35.5,"at":"PON","between":null,"halted":null,"kind":"crossing","who":null,"no":"13351","name":"DHN Alappuzha EX","src":"DHN","dst":"ALLP","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"00:00","km":151.9,"at":null,"between":["MBL","VKT"],"halted":null,"kind":"crossing","who":null,"no":"67225","name":"BZA GDR Passenger MEMU","src":"BZA","dst":"GDR","type":"ORDINARY","leapfrog":null,"since":null},{"date":"2026-09-19","time":"00:07","km":160.6,"at":"VKT","between":null,"halted":null,"kind":"crossing","who":null,"no":"17293","name":"NS SMVB Express","src":"NS","dst":"SMVB","type":"","leapfrog":null,"since":null},{"date":"2026-09-19","time":"00:13","km":168.8,"at":"VDE","between":null,"halted":null,"kind":"crossing","who":null,"no":"12839","name":"Chennai Mail","src":"SRC","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"00:37","km":199.2,"at":null,"between":["KJJ","BTTR"],"halted":null,"kind":"crossing","who":null,"no":"22504","name":"Vivek Express","src":"DBRG","dst":"CAPE","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"00:40","km":203.1,"at":null,"between":["KJJ","BTTR"],"halted":null,"kind":"crossing","who":null,"no":"18521","name":"Tirumala Express","src":"VSKP","dst":"GTL","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"00:46","km":210.7,"at":null,"between":["BTTR","KVZ"],"halted":null,"kind":"crossing","who":null,"no":"17247","name":"NS DMM Express","src":"NS","dst":"DMM","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"00:46","km":210.9,"at":null,"between":["BTTR","KVZ"],"halted":null,"kind":"crossing","who":null,"no":"17250","name":"CCT TPTY Express","src":"CCT","dst":"TPTY","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"00:47","km":211.4,"at":null,"between":["BTTR","KVZ"],"halted":null,"kind":"crossing","who":null,"no":"12616","name":"Grand Trunk Express","src":"NDLS","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"00:58","km":226.0,"at":"KVZ","between":null,"halted":null,"kind":"crossing","who":null,"no":"12655","name":"Navjeevan Express","src":"ADI","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"01:05","km":234.7,"at":null,"between":["KVZ","TTU"],"halted":null,"kind":"crossing","who":null,"no":"12626","name":"Kerala SF Express","src":"NDLS","dst":"TVC","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"01:06","km":235.6,"at":null,"between":["KVZ","TTU"],"halted":null,"kind":"crossing","who":null,"no":"17644","name":"Circar Express","src":"COA","dst":"CGL","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"01:17","km":249.8,"at":null,"between":["TTU","UPD"],"halted":null,"kind":"crossing","who":null,"no":"12604","name":"Chennai SF Express","src":"CHZ","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"01:21","km":255.3,"at":null,"between":["UPD","SKM"],"halted":null,"kind":"crossing","who":null,"no":"17210","name":"Seshadri Express","src":"CCT","dst":"SMVB","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"01:33","km":269.9,"at":null,"between":["SKM","TNR"],"halted":null,"kind":"crossing","who":null,"no":"12734","name":"Narayanadri SF","src":"LPI","dst":"TPTY","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"01:41","km":279.5,"at":null,"between":["TNR","SDM"],"halted":null,"kind":"crossing","who":null,"no":"16094","name":"LJN MAS Express","src":"LJN","dst":"MAS","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"01:43","km":282.8,"at":null,"between":["SDM","OGL"],"halted":null,"kind":"crossing","who":null,"no":"12622","name":"Tamilnadu Express","src":"NDLS","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"01:43","km":282.3,"at":null,"between":["SDM","OGL"],"halted":null,"kind":"crossing","who":null,"no":"22365","name":"DNR SMVB Express","src":"DNR","dst":"SMVB","type":"","leapfrog":null,"since":null},{"date":"2026-09-19","time":"01:54","km":296.9,"at":null,"between":["OGL","KRV"],"halted":null,"kind":"crossing","who":null,"no":"12760","name":"Charminar SF EX","src":"HYB","dst":"MSB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"01:57","km":300.9,"at":"KRV","between":null,"halted":null,"kind":"crossing","who":null,"no":"08581","name":"VSKP SMVB Special","src":"VSKP","dst":"SMVB","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"02:03","km":307.7,"at":"ANB","between":null,"halted":null,"kind":"crossing","who":null,"no":"07592","name":"CHZ-TPTY Special","src":"CHZ","dst":"TPTY","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"02:06","km":311.7,"at":null,"between":["RPRL","UGD"],"halted":null,"kind":"crossing","who":null,"no":"12764","name":"Padmavathi SF","src":"SC","dst":"TPTY","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"02:08","km":314.5,"at":null,"between":["RPRL","UGD"],"halted":null,"kind":"crossing","who":null,"no":"07819","name":"CHZ-TPTY Special","src":"CHZ","dst":"TPTY","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"02:20","km":329.9,"at":"KPLL","between":null,"halted":null,"kind":"crossing","who":null,"no":"22801","name":"VSKP MAS Sampark F","src":"VSKP","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"02:27","km":338.9,"at":null,"between":["JAQ","CLX"],"halted":null,"kind":"crossing","who":null,"no":"20849","name":"BBS RMM SF","src":"BBS","dst":"RMM","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"02:56","km":374.7,"at":null,"between":["MCVM","NDO"],"halted":null,"kind":"crossing","who":null,"no":"22673","name":"JU MQ SF Express","src":"JU","dst":"MQ","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"03:09","km":391.7,"at":null,"between":["TSR","TEL"],"halted":null,"kind":"crossing","who":null,"no":"16863","name":"BGKT MQ Express","src":"BGKT","dst":"MQ","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"03:21","km":406.7,"at":"KLX","between":null,"halted":null,"kind":"crossing","who":null,"no":"12296","name":"Sangha Mitra EX","src":"DNR","dst":"SMVB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"03:40","km":431.0,"at":"BZA","between":null,"halted":"BZA","kind":"crossing","who":null,"no":"12710","name":"Simhapuri SF Express","src":"SC","dst":"GDR","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"03:45","km":431.0,"at":"BZA","between":null,"halted":"BZA","kind":"crossing","who":null,"no":"22353","name":"Humsafar Express","src":"PNBE","dst":"SMVB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"03:50","km":431.0,"at":"BZA","between":null,"halted":"BZA","kind":"crossing","who":null,"no":"18189","name":"TATA ERS Express","src":"TATA","dst":"ERS","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"03:55","km":436.4,"at":null,"between":["BZA","RYP"],"halted":null,"kind":"crossing","who":null,"no":"12750","name":"BIDR MTM SF Express","src":"BIDR","dst":"MTM","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"03:57","km":438.8,"at":null,"between":["BZA","RYP"],"halted":null,"kind":"crossing","who":null,"no":"17635","name":"NED DMM Express","src":"NED","dst":"DMM","type":"","leapfrog":null,"since":null},{"date":"2026-09-19","time":"04:34","km":479.5,"at":null,"between":["TNGM","MDR"],"halted":null,"kind":"crossing","who":null,"no":"12788","name":"NSL NS SF Express","src":"NSL","dst":"NS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"05:43","km":556.1,"at":null,"between":["DKJ","GLA"],"halted":null,"kind":"crossing","who":null,"no":"67211","name":"KZJ BZA Passenger","src":"KZJ","dst":"BZA","type":"ORDINARY","leapfrog":null,"since":null},{"date":"2026-09-19","time":"05:45","km":559.1,"at":null,"between":["GLA","GUU"],"halted":null,"kind":"crossing","who":null,"no":"12644","name":"NZM TVC SF Express","src":"NZM","dst":"TVC","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"06:17","km":596.0,"at":null,"between":["KDM","INK"],"halted":null,"kind":"crossing","who":null,"no":"11019","name":"Konark Express","src":"CSMT","dst":"BBSN","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"06:31","km":612.7,"at":null,"between":["NKD","YGL"],"halted":null,"kind":"overtake","who":"user","no":"07815","name":"TPTY J Special","src":"TPTY","dst":"J","type":"","leapfrog":null,"since":null},{"date":"2026-09-19","time":"06:45","km":629.1,"at":null,"between":["CLE","WL"],"halted":null,"kind":"crossing","who":null,"no":"20707","name":"VSKP Vande Bharat","src":"SC","dst":"VSKP","type":"SHATABDI","leapfrog":null,"since":null},{"date":"2026-09-19","time":"07:05","km":649.4,"at":null,"between":["KZJ","HSP"],"halted":null,"kind":"crossing","who":null,"no":"17234","name":"Bhagyanagar Express","src":"SKZR","dst":"SC","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"07:12","km":656.6,"at":null,"between":["KZJ","HSP"],"halted":null,"kind":"crossing","who":null,"no":"07665","name":"FDB-BZA Special","src":"FDB","dst":"BZA","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"07:27","km":673.9,"at":null,"between":["OPL","JMKT"],"halted":null,"kind":"crossing","who":null,"no":"17036","name":"BPQ KZJ","src":"BPQ","dst":"KZJ","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"07:46","km":695.0,"at":null,"between":["BGSF","PTKP"],"halted":null,"kind":"overtake","who":"user","no":"20805","name":"AP Express","src":"VSKP","dst":"NDLS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"08:44","km":760.4,"at":null,"between":["RVKH","MMZ"],"halted":null,"kind":"crossing","who":null,"no":"20101","name":"SC Vande Bharat","src":"NGP","dst":"SC","type":"SHATABDI","leapfrog":null,"since":null},{"date":"2026-09-19","time":"08:57","km":775.4,"at":null,"between":["BPA","RECH"],"halted":null,"kind":"crossing","who":null,"no":"12511","name":"Raptisagar Express","src":"GKP","dst":"TVCN","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"08:58","km":776.2,"at":null,"between":["BPA","RECH"],"halted":null,"kind":"crossing","who":null,"no":"07663","name":"NZM-KZJ Special","src":"NZM","dst":"KZJ","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"09:13","km":793.1,"at":null,"between":["RECH","ASAF"],"halted":null,"kind":"crossing","who":null,"no":"12434","name":"NZM MAS Rajdhani","src":"NZM","dst":"MAS","type":"RAJDHANI","leapfrog":null,"since":null},{"date":"2026-09-19","time":"09:35","km":818.6,"at":null,"between":["SKZR","SRUR"],"halted":null,"kind":"crossing","who":null,"no":"12286","name":"SC Duronto Express","src":"NZM","dst":"SC","type":"RAJDHANI","leapfrog":null,"since":null},{"date":"2026-09-19","time":"09:42","km":826.0,"at":null,"between":["SKZR","SRUR"],"halted":null,"kind":"crossing","who":null,"no":"20626","name":"BGKT MAS SF Express","src":"BGKT","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"09:44","km":827.7,"at":"SRUR","between":null,"halted":null,"kind":"overtake","who":"user","no":"17003","name":"KZJ SRUR Ramgiri","src":"KZJ","dst":"SRUR","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"09:55","km":841.0,"at":null,"between":["MKDI","WIRR"],"halted":null,"kind":"crossing","who":null,"no":"00762","name":"NZM RU","src":"NZM","dst":"RU","type":"PARCEL EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"10:11","km":858.4,"at":null,"between":["WIRR","VHGN"],"halted":null,"kind":"crossing","who":null,"no":"11086","name":"GWL SMVB Express","src":"GWL","dst":"SMVB","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"10:36","km":880.9,"at":null,"between":["BPQ","GNVR"],"halted":null,"kind":"crossing","who":null,"no":"12724","name":"Telangana Express","src":"NDLS","dst":"HYB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"10:38","km":882.9,"at":null,"between":["BPQ","GNVR"],"halted":null,"kind":"crossing","who":null,"no":"61127","name":"WR BPQ MEMU","src":"WR","dst":"BPQ","type":"Train  &nbsp;MEMU","leapfrog":null,"since":null},{"date":"2026-09-19","time":"11:14","km":923.3,"at":null,"between":["BUX","MJRI"],"halted":null,"kind":"crossing","who":null,"no":"20494","name":"CDG MDU SF Express","src":"CDG","dst":"MDU","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"11:29","km":939.4,"at":null,"between":["MJRI","WRR"],"halted":null,"kind":"crossing","who":null,"no":"22692","name":"SBC Rajdhani","src":"NZM","dst":"SBC","type":"RAJDHANI","leapfrog":null,"since":null},{"date":"2026-09-19","time":"11:33","km":944.3,"at":null,"between":["WRR","CKNI"],"halted":null,"kind":"crossing","who":null,"no":"22706","name":"TPTY Hamsafar","src":"JAT","dst":"TPTY","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"11:38","km":949.5,"at":null,"between":["WRR","CKNI"],"halted":null,"kind":"crossing","who":null,"no":"16788","name":"SVDK TEN Expres","src":"SVDK","dst":"TEN","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"11:55","km":968.3,"at":null,"between":["NGI","HGT"],"halted":null,"kind":"crossing","who":null,"no":"12616","name":"Grand Trunk Express","src":"NDLS","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"11:59","km":973.7,"at":null,"between":["NGI","HGT"],"halted":null,"kind":"crossing","who":null,"no":"20806","name":"AP Express","src":"NDLS","dst":"VSKP","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"12:05","km":980.0,"at":null,"between":["HGT","WG"],"halted":null,"kind":"crossing","who":null,"no":"22151","name":"PUNE Kazipet Express","src":"PUNE","dst":"KZJ","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"12:13","km":988.5,"at":null,"between":["WG","SNN"],"halted":null,"kind":"crossing","who":null,"no":"16688","name":"Navyug Express","src":"SVDK","dst":"MAQ","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"12:20","km":996.1,"at":null,"between":["SNN","BPK"],"halted":null,"kind":"crossing","who":null,"no":"12792","name":"Secunderabad EX","src":"DNR","dst":"SC","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"12:40","km":1019.0,"at":"VADR","between":null,"halted":null,"kind":"crossing","who":null,"no":"12626","name":"Kerala SF Express","src":"NDLS","dst":"TVC","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"12:54","km":1033.9,"at":null,"between":["SLOR","TGP"],"halted":null,"kind":"crossing","who":null,"no":"03241","name":"DNR SMVB SF Special","src":"DNR","dst":"SMVB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"12:58","km":1038.8,"at":null,"between":["TGP","SNI"],"halted":null,"kind":"crossing","who":null,"no":"22365","name":"DNR SMVB Express","src":"DNR","dst":"SMVB","type":"","leapfrog":null,"since":null},{"date":"2026-09-19","time":"13:20","km":1063.8,"at":"BTBR","between":null,"halted":null,"kind":"crossing","who":null,"no":"04135","name":"SFG-YPR Special","src":"SFG","dst":"YPR","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"13:28","km":1071.6,"at":"GMG","between":null,"halted":null,"kind":"crossing","who":null,"no":"12622","name":"Tamilnadu Express","src":"NDLS","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"13:43","km":1088.4,"at":"AJNI","between":null,"halted":null,"kind":"crossing","who":null,"no":"18030","name":"SHM LTT Express","src":"SHM","dst":"LTT","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"13:58","km":1099.2,"at":null,"between":["GNQ","BWRA"],"halted":null,"kind":"crossing","who":null,"no":"12968","name":"JP Chennai SF","src":"JP","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"14:14","km":1116.6,"at":null,"between":["KSWR","KOHL"],"halted":null,"kind":"crossing","who":null,"no":"20911","name":"NGP Vande Bharat","src":"INDB","dst":"NGP","type":"SHATABDI","leapfrog":null,"since":null},{"date":"2026-09-19","time":"14:28","km":1130.8,"at":null,"between":["KOHL","SNKB"],"halted":null,"kind":"crossing","who":null,"no":"12194","name":"JBP YPR Express","src":"JBP","dst":"YPR","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"14:37","km":1140.5,"at":null,"between":["SNKB","MER"],"halted":null,"kind":"crossing","who":null,"no":"12540","name":"LKO YPR Express","src":"LKO","dst":"YPR","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"15:03","km":1168.6,"at":null,"between":["KLBA","TNH"],"halted":null,"kind":"crossing","who":null,"no":"22176","name":"JP NGP SF Express","src":"JP","dst":"NGP","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"15:05","km":1171.0,"at":null,"between":["TNH","NRKR"],"halted":null,"kind":"crossing","who":null,"no":"12296","name":"Sangha Mitra EX","src":"DNR","dst":"SMVB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"15:09","km":1174.6,"at":null,"between":["TNH","NRKR"],"halted":null,"kind":"crossing","who":null,"no":"61118","name":"AMLA NGP MEMU","src":"AMLA","dst":"NGP","type":"Train  &nbsp;MEMU","leapfrog":null,"since":null},{"date":"2026-09-19","time":"15:17","km":1183.5,"at":null,"between":["NRKR","DDMT"],"halted":null,"kind":"crossing","who":null,"no":"12722","name":"Dakshin Express","src":"NZM","dst":"HYB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"15:36","km":1203.5,"at":null,"between":["PAR","TEO"],"halted":null,"kind":"crossing","who":null,"no":"22351","name":"SHC SMVB Express","src":"SHC","dst":"SMVB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"16:29","km":1259.7,"at":null,"between":["AMLA","BYS"],"halted":null,"kind":"crossing","who":null,"no":"58830","name":"BZU SEY Passenger","src":"BZU","dst":"SEY","type":"PASSENGER","leapfrog":null,"since":null},{"date":"2026-09-19","time":"18:03","km":1359.3,"at":null,"between":["KQE","SAHL"],"halted":null,"kind":"crossing","who":null,"no":"12642","name":"Tirukkural Express","src":"NZM","dst":"CAPE","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"18:19","km":1376.1,"at":null,"between":["TAKU","KRTH"],"halted":null,"kind":"crossing","who":null,"no":"07661","name":"NZM-NED Special","src":"NZM","dst":"NED","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"18:22","km":1379.5,"at":null,"between":["KRTH","ET"],"halted":null,"kind":"overtake","who":"user","no":"12578","name":"Bagmati Express","src":"MYS","dst":"DBG","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"18:30","km":1388.0,"at":"ET","between":null,"halted":"ET","kind":"crossing","who":null,"no":"07008","name":"RXL CHZ Special","src":"RXL","dst":"CHZ","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"18:35","km":1388.0,"at":"ET","between":null,"halted":"ET","kind":"crossing","who":null,"no":"12138","name":"Punjab Mail","src":"FZR","dst":"CSMT","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"18:44","km":1397.2,"at":"PRKD","between":null,"halted":null,"kind":"crossing","who":null,"no":"12061","name":"JBP Jan Shatabdi","src":"RKMP","dst":"MML","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"19:19","km":1434.4,"at":null,"between":["BNI","ODG"],"halted":null,"kind":"crossing","who":null,"no":"22686","name":"Karntk Sampark Kranti","src":"CDG","dst":"YPR","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"19:40","km":1456.1,"at":null,"between":["ODG","MDDP"],"halted":null,"kind":"overtake","who":"user","no":"51827","name":"ET JHS Passenger","src":"ET","dst":"JHS","type":"ORDINARY","leapfrog":null,"since":null},{"date":"2026-09-19","time":"20:04","km":1480.2,"at":"RKMP","between":null,"halted":null,"kind":"crossing","who":null,"no":"20844","name":"BGKT BSP SF Express","src":"BGKT","dst":"BSP","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"20:09","km":1485.6,"at":null,"between":["HBJ","BPL"],"halted":null,"kind":"crossing","who":null,"no":"19484","name":"SHC ADI Express","src":"SHC","dst":"ADI","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"20:26","km":1493.6,"at":null,"between":["NSZ","SUW"],"halted":null,"kind":"crossing","who":null,"no":"61632","name":"BINA BPL MEMU","src":"BINA","dst":"BPL","type":"ORDINARY","leapfrog":null,"since":null},{"date":"2026-09-19","time":"20:37","km":1506.8,"at":null,"between":["BVB","DWG"],"halted":null,"kind":"crossing","who":null,"no":"12591","name":"GKP YPR Express","src":"GKP","dst":"YPR","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"21:03","km":1537.3,"at":null,"between":["SCI","BHS"],"halted":null,"kind":"crossing","who":null,"no":"20424","name":"Patalkot Express","src":"FZR","dst":"SEY","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"21:36","km":1577.0,"at":null,"between":["PAI","BAQ"],"halted":null,"kind":"crossing","who":null,"no":"12716","name":"Sachkhand Express","src":"ASR","dst":"NED","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"21:36","km":1576.5,"at":null,"between":["PAI","BAQ"],"halted":null,"kind":"crossing","who":null,"no":"22164","name":"Mahamana Express","src":"KURJ","dst":"BPL","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"21:42","km":1584.0,"at":null,"between":["BAQ","BET"],"halted":null,"kind":"overtake","who":"other","no":"20805","name":"AP Express","src":"VSKP","dst":"NDLS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"21:54","km":1598.2,"at":"KAH","between":null,"halted":null,"kind":"crossing","who":null,"no":"11078","name":"Jhelum Express","src":"JAT","dst":"PUNE","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"22:06","km":1612.4,"at":null,"between":["MABA","KIKA"],"halted":null,"kind":"crossing","who":null,"no":"12442","name":"BSP Rajdhni Express","src":"NDLS","dst":"BSP","type":"RAJDHANI","leapfrog":null,"since":null},{"date":"2026-09-19","time":"22:17","km":1625.7,"at":null,"between":["BINA","AGD"],"halted":null,"kind":"crossing","who":null,"no":"09042","name":"UDN Puja Special","src":"BUI","dst":"UDN","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"22:17","km":1625.5,"at":null,"between":["BINA","AGD"],"halted":null,"kind":"crossing","who":null,"no":"11080","name":"GKP LTT Express","src":"GKP","dst":"LTT","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"22:18","km":1626.6,"at":null,"between":["BINA","AGD"],"halted":null,"kind":"crossing","who":null,"no":"01924","name":"VGLJ HDP SF Special","src":"VGLJ","dst":"HDP","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"22:26","km":1636.2,"at":null,"between":["AGD","KOA"],"halted":null,"kind":"crossing","who":null,"no":"12270","name":"MAS Duronto Express","src":"NZM","dst":"MAS","type":"RAJDHANI","leapfrog":null,"since":null},{"date":"2026-09-19","time":"22:41","km":1654.3,"at":null,"between":["MXS","DUA"],"halted":null,"kind":"crossing","who":null,"no":"12410","name":"Gondwana Express","src":"NZM","dst":"RIG","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"22:47","km":1660.4,"at":"DUA","between":null,"halted":null,"kind":"crossing","who":null,"no":"22222","name":"CSMT Rajdhani","src":"NZM","dst":"CSMT","type":"RAJDHANI","leapfrog":null,"since":null},{"date":"2026-09-19","time":"22:58","km":1673.4,"at":null,"between":["JLN","JRO"],"halted":null,"kind":"crossing","who":null,"no":"12191","name":"NZM JBP SF Express","src":"NZM","dst":"JBP","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"23:03","km":1679.7,"at":null,"between":["JRO","LAR"],"halted":null,"kind":"crossing","who":null,"no":"12724","name":"Telangana Express","src":"NDLS","dst":"HYB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"23:14","km":1692.5,"at":null,"between":["LAR","DWA"],"halted":null,"kind":"crossing","who":null,"no":"16032","name":"Andaman Express","src":"SVDK","dst":"MAS","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"23:22","km":1701.8,"at":null,"between":["DWA","JHA"],"halted":null,"kind":"crossing","who":null,"no":"12780","name":"GOA Express","src":"NZM","dst":"VSG","type":"COMPOSITE","leapfrog":null,"since":null},{"date":"2026-09-19","time":"23:32","km":1713.7,"at":null,"between":["JHA","BJA"],"halted":null,"kind":"crossing","who":null,"no":"14314","name":"BE LTT Express","src":"BE","dst":"LTT","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-19","time":"23:37","km":1720.2,"at":null,"between":["BJA","DLA"],"halted":null,"kind":"crossing","who":null,"no":"12162","name":"Lashkar SF Express","src":"AGC","dst":"LTT","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"23:41","km":1725.1,"at":null,"between":["DLA","TBT"],"halted":null,"kind":"overtake","who":"other","no":"22691","name":"Rajdhani Express","src":"YPR","dst":"NZM","type":"RAJDHANI","leapfrog":null,"since":null},{"date":"2026-09-19","time":"23:46","km":1730.3,"at":null,"between":["TBT","MZX"],"halted":null,"kind":"crossing","who":null,"no":"12616","name":"Grand Trunk Express","src":"NDLS","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"23:47","km":1731.3,"at":null,"between":["TBT","MZX"],"halted":null,"kind":"crossing","who":null,"no":"22182","name":"NZM JBP SF Express","src":"NZM","dst":"JBP","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-19","time":"23:58","km":1745.0,"at":null,"between":["BZY","BPW"],"halted":null,"kind":"crossing","who":null,"no":"12122","name":"M P Sampark Krnti Express","src":"NZM","dst":"JBP","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"00:26","km":1778.0,"at":"VGLJ","between":null,"halted":"VGLJ","kind":"crossing","who":null,"no":"22692","name":"SBC Rajdhani","src":"NZM","dst":"SBC","type":"RAJDHANI","leapfrog":null,"since":null},{"date":"2026-09-20","time":"00:47","km":1803.9,"at":null,"between":["DAA","SOR"],"halted":null,"kind":"crossing","who":null,"no":"20806","name":"AP Express","src":"NDLS","dst":"VSKP","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"00:52","km":1810.9,"at":null,"between":["DAA","SOR"],"halted":null,"kind":"crossing","who":null,"no":"12448","name":"UP Samprk Kranti","src":"NZM","dst":"MKP","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"00:56","km":1817.2,"at":null,"between":["SOR","KTRA"],"halted":null,"kind":"crossing","who":null,"no":"12626","name":"Kerala SF Express","src":"NDLS","dst":"TVC","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"01:04","km":1830.8,"at":null,"between":["KTRA","DBA"],"halted":null,"kind":"crossing","who":null,"no":"12156","name":"Bhopal Express","src":"NZM","dst":"RKMP","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"01:05","km":1832.3,"at":null,"between":["KTRA","DBA"],"halted":null,"kind":"crossing","who":null,"no":"11842","name":"Gita Jayanti EX","src":"KKDE","dst":"KURJ","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"01:14","km":1847.1,"at":null,"between":["AEH","ARI"],"halted":null,"kind":"crossing","who":null,"no":"12628","name":"Karnataka Express","src":"NDLS","dst":"SMVB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"01:19","km":1854.8,"at":null,"between":["ARI","SLV"],"halted":null,"kind":"overtake","who":"user","no":"11841","name":"Gita Jayanti EX","src":"KURJ","dst":"KKDE","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"01:24","km":1862.9,"at":null,"between":["SLV","STLI"],"halted":null,"kind":"crossing","who":null,"no":"12622","name":"Tamilnadu Express","src":"NDLS","dst":"MAS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"01:28","km":1868.7,"at":null,"between":["STLI","GWL"],"halted":null,"kind":"crossing","who":null,"no":"12920","name":"Malwa Express","src":"SVDK","dst":"DADN","type":"COMPOSITE","leapfrog":null,"since":null},{"date":"2026-09-20","time":"01:29","km":1869.9,"at":null,"between":["STLI","GWL"],"halted":null,"kind":"crossing","who":null,"no":"00654","name":"PTNR RPM Pcet Special","src":"PTNR","dst":"RPM","type":"PARCEL EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"01:42","km":1885.4,"at":null,"between":["BLNR","RRU"],"halted":null,"kind":"crossing","who":null,"no":"11058","name":"ASR CSMT Express","src":"ASR","dst":"CSMT","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"02:00","km":1908.3,"at":null,"between":["SANK","MRA"],"halted":null,"kind":"crossing","who":null,"no":"15302","name":"LKU SBC Express","src":"LKU","dst":"SBC","type":"","leapfrog":null,"since":null},{"date":"2026-09-20","time":"02:16","km":1928.9,"at":null,"between":["HET","DHO"],"halted":null,"kind":"crossing","who":null,"no":"12486","name":"SGNR NED Express","src":"SGNR","dst":"NED","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"02:23","km":1938.2,"at":null,"between":["HET","DHO"],"halted":null,"kind":"crossing","who":null,"no":"12722","name":"Dakshin Express","src":"NZM","dst":"HYB","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"02:31","km":1949.3,"at":null,"between":["DHO","MIA"],"halted":null,"kind":"crossing","who":null,"no":"19308","name":"UHL INDB Express","src":"UHL","dst":"INDB","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"02:50","km":1973.0,"at":null,"between":["JJ","BHA"],"halted":null,"kind":"crossing","who":null,"no":"06598","name":"YNRK YPR Special","src":"YNRK","dst":"YPR","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"02:54","km":1979.0,"at":null,"between":["JJ","BHA"],"halted":null,"kind":"overtake","who":"user","no":"12779","name":"GOA Express","src":"VSG","dst":"NZM","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"03:36","km":2024.4,"at":"DDDM","between":null,"halted":null,"kind":"crossing","who":null,"no":"07665","name":"FDB-BZA Special","src":"FDB","dst":"BZA","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"03:47","km":2036.4,"at":"BAD","between":null,"halted":null,"kind":"crossing","who":null,"no":"07661","name":"NZM-NED Special","src":"NZM","dst":"NED","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"03:57","km":2047.0,"at":"MTJ","between":null,"halted":null,"kind":"crossing","who":null,"no":"01990","name":"MTJ VGLJ Mela Special","src":"DEEG","dst":"VGLJ","type":"PASSENGER","leapfrog":null,"since":null},{"date":"2026-09-20","time":"04:51","km":2105.8,"at":null,"between":["HDL","BNCR"],"halted":null,"kind":"crossing","who":null,"no":"07663","name":"NZM-KZJ Special","src":"NZM","dst":"KZJ","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"04:52","km":2106.4,"at":null,"between":["HDL","BNCR"],"halted":null,"kind":"crossing","who":null,"no":"64958","name":"PWL AGC MEMU","src":"PWL","dst":"AGC","type":"ORDINARY","leapfrog":null,"since":null},{"date":"2026-09-20","time":"04:54","km":2108.5,"at":null,"between":["BNCR","SHLK"],"halted":null,"kind":"crossing","who":null,"no":"00762","name":"NZM RU","src":"NZM","dst":"RU","type":"PARCEL EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"04:56","km":2110.7,"at":"SHLK","between":null,"halted":null,"kind":"crossing","who":null,"no":"12904","name":"Golden Temple M","src":"ASR","dst":"BDTS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"05:16","km":2132.3,"at":null,"between":["PWL","AST"],"halted":null,"kind":"crossing","who":null,"no":"18238","name":"Chhatisgarh Express","src":"ASR","dst":"BSP","type":"MAIL_EXPRESS","leapfrog":null,"since":null},{"date":"2026-09-20","time":"05:17","km":2133.8,"at":null,"between":["PWL","AST"],"halted":null,"kind":"crossing","who":null,"no":"12402","name":"DDN KOTA AC Express","src":"DDN","dst":"KOTA","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"05:25","km":2142.5,"at":null,"between":["AST","BVH"],"halted":null,"kind":"crossing","who":null,"no":"02656","name":"NZM-ERS Special","src":"NZM","dst":"ERS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"05:31","km":2148.8,"at":null,"between":["AST","BVH"],"halted":null,"kind":"crossing","who":null,"no":"12804","name":"VSKP Sampark Jyanti","src":"NZM","dst":"VSKP","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"05:38","km":2156.4,"at":"FDN","between":null,"halted":null,"kind":"crossing","who":null,"no":"12708","name":"NZM TPTY SF Express","src":"NZM","dst":"TPTY","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"05:41","km":2159.9,"at":"FDB","between":null,"halted":null,"kind":"crossing","who":null,"no":"12138","name":"Punjab Mail","src":"FZR","dst":"CSMT","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"05:47","km":2165.9,"at":null,"between":["FDB","TKD"],"halted":null,"kind":"crossing","who":null,"no":"12618","name":"Mangladweep Express","src":"NZM","dst":"ERS","type":"SUPERFAST","leapfrog":null,"since":null},{"date":"2026-09-20","time":"06:00","km":2180.0,"at":"NZM","between":null,"halted":"NZM","kind":"crossing","who":null,"no":"22470","name":"Vande Bharat Express","src":"NZM","dst":"KURJ","type":"SHATABDI","leapfrog":null,"since":null},{"date":"2026-09-20","time":"06:04","km":2180.6,"at":null,"between":["NZM","PGMD"],"halted":null,"kind":"crossing","who":null,"no":"12002","name":"Shatabdi Expres","src":"NDLS","dst":"RKMP","type":"SHATABDI","leapfrog":null,"since":null}],"names":{"SKM":"Singarayakonda","UPD":"Ulavapadu","JU":"Jodhpur Jn","KZJ":"Kazipet Jn","BPK":"Bhugaon","TTU":"Tettu","OGL":"Ongole","DDN":"Dehradun","MZX":"Matatila","KJJ":"Kodavaluru","ASR":"Amritsar Jn","DUA":"Dhaura","DBA":"Dabra","HBJ":"Rani Kamalapati (Bhopal)","WR":"Wardha Jn","VGLJ":"Jhansi (Virangana Lakshmibai)","ANB":"Ammanabrolu","WIRR":"Wirur","MAQ":"Mangalore Central","NPKM":"Nandiyampakkam","CDG":"Chandigarh","BTBR":"Buti Bori","JHA":"Jakhaura","TSR":"Tsunduru","MDR":"Madhira","SNI":"Sindi","NGI":"Nagri","RECH":"Rechni Road","KQE":"Kala Akhar","VHGN":"Wihirgaon","SHLK":"Sholaka","GKP":"Gorakhpur","DADN":"Dr Ambedkar Ngr (Mhow)","DMM":"Dharmavaram Jn","NDO":"Nidubrolu","WL":"Warangal","YGL":"Yelgur","DWA":"Dailwara","FZR":"Firozpur Cantt Jn","MTJ":"Mathura Jn","AGD":"Agasod","MER":"Metpanjra","MKDI":"Makudi","JHS":"Jhansi Jn","PAI":"Pabai","LKU":"Lal Kuan","NKD":"Nekonda","CSMT":"C Shivaji Maharaj T","BWRA":"Bharatwada","KAH":"Kalhar","VSG":"Vasco Da Gama","WG":"Wagholi","LAR":"Lalitpur","BNI":"Budni","AST":"Asaoti","MSB":"Chennai Beach","RMM":"Rameswaram","SGNR":"Shri Ganganagar","SOR":"Sonagir","AEH":"Anantpaith","UDN":"Udhna Jn (Surat)","MMZ":"Mandamari","SHM":"Shalimar","NDLS":"New Delhi","RPRL":"Raparla H","BPQ":"Balharshah Jn","BZY":"Basai","BSP":"Bilaspur Jn","LKO":"Lucknow","TBT":"Talbahat","KIKA":"Kurwai Kothora","TNR":"Tanguturu","SDM":"Surareddipalem","GDR":"Gudur Jn","CLX":"Chirala","BTTR":"Bitragunta","BLNR":"Birlanagar","CHZ":"Charlapalli (Secunderabad)","BNCR":"Banchari","TEL":"Tenali Jn","NZM":"Hazrat Nizamuddin","BBSN":"Bhubaneswar New","DLA":"Daulta","SUW":"Sukhi Sewaniyan","UHL":"Una Himachal","PWL":"Palwal","ADI":"Ahmedabad Jn","GNVR":"Gondwana Visapur","KLX":"Kolakalur","BAD":"Baad","RKMP":"Rani Kamlapati(Bhopal)","ARI":"Antri","JAQ":"Jandrapeta H","TNGM":"Tondala Gopavaram","BJA":"Bijrotha","HGT":"Hinganghat","KVZ":"Kavali","NED":"H Sahib Nanded","TNH":"Tinkheda","GWL":"Gwalior Jn","NGP":"Nagpur Jn","BE":"Bareilly","PUNE":"Pune Jn","NSL":"Nagarsol","JJ":"Jajau","MASS":"Mgr Chennai Central Suburban","RXL":"Raxaul Jn","JAT":"Jammu Tawi","RRU":"Rayaru","BVH":"Ballabgarh","KRTH":"Kiratgarh","BHA":"Bhandai","MDDP":"Mandi Dip","SANK":"Sank","BET":"Bareth","VADR":"Varud","SEY":"Seoni","ASAF":"Asifabad Road","KSWR":"Kalmeshwar","BAQ":"Ganj Basoda","SLV":"Sandalpur","PNBE":"Patna Jn","GNQ":"Godhani","HSP":"Hasanparti Road","KPLL":"Kotta Pandillapalli H","TEO":"Teegaon","MDU":"Madurai Jn","UGD":"Uppugunduru","BVB":"Bhad Bhada Ghat","LPI":"Lingampalli","KLBA":"Kalambha","SFG":"Subedarganj (Prayagraj Jn)","JRO":"Jiron","HDP":"Hadapsar (Pune)","JMKT":"Jamikunta","MJR":"Minjur","TATA":"Tatanagar Jn","GLA":"Garla","GTL":"Guntakal Jn","VDE":"Vedayapalem","BYS":"Barsali","CKNI":"Chikni Road","RIG":"Raigarh","MBL":"Manubolu","MTM":"Machelipatnam","DHO":"Dhaulpur","INDB":"Indore Jn Bg","JLN":"Jakhlaun","TEN":"Tirunelveli","NS":"Narasapur","BBS":"Bhubaneswar","FDN":"Faridabad New Town","OPL":"Uppal","DBG":"Darbhanga Jn","NRKR":"Narkher","BGSF":"Bisugirsharif","BHS":"Vidisha","GMG":"Gumgaon","SKZR":"Sirpur Kaghaznagar","PON":"Ponneri","TKD":"Tugalakabad","MCVM":"Machavaram H","KKDE":"Kurukshetra Jn","DDMT":"Darimeta","COA":"Kakinada Port","SLOR":"Seloo Road","SC":"Secunderabad Jn","DDDM":"Deen Dayal Dham","STLI":"Sithouli","GUU":"Gundratimadugu","MKP":"Manikpur Jn","BZU":"Betul","SHC":"Saharsa Jn","SCI":"Sanchi","SVDK":"Shmata Vd Katra","ODG":"Obaidulla Ganj","JBP":"Jabalpur","KOA":"Karonda","MXS":"Mohasa","BINA":"Bina Jn","BDTS":"Bandra Terminus","ET":"Itarsi Jn","SRC":"Santragachi Jn","WRR":"Warora","AGC":"Agra Cantt","HET":"Hetampur","KURJ":"Khajuraho (Rev)","CAPE":"Kanniyakumari","AIPP":"Attipattu Pudu Nagar H","PTKP":"Potkapalli","SAHL":"Saheli","BZA":"Vijayawada Jn","DHN":"Dhanbad Jn","BUX":"Bhandak","RYP":"Rayanapadu (Vijaywada)","SRUR":"Sirpur Town","BPW":"Burhpura","BIDR":"Bidar","CGL":"Chengalpattu Jn","RPM":"Royapuram","FDB":"Faridabad","VKT":"Venkatachalam","HYB":"Hyderabad","TAKU":"Taku","INK":"Intekanne","APB":"Anuppambattu","BPA":"Belampalli","BPL":"Bhopal Jn","PAR":"Pandhurna","YNRK":"Yog N Rishikesh","KOHL":"Kohli","KOTA":"Kota Jn","MYS":"Mysore Jn","SPE":"Sullurupeta","AJNI":"Ajni (Nagpur)","DEEG":"Deeg","MQ":"Mannargudi","TPTY":"Tirupati","MIA":"Mania","PRKD":"Powarkheda","BUI":"Ballia","KDM":"Kesamudram","MABA":"Mandi Bamora","TVCN":"Thiruvananthapuram North","DAA":"Datia","LTT":"Lokmanyatilak","DWG":"Dewanganj","DBRG":"Dibrugarh","KRV":"Karavadi","SNN":"Sonegaon","JP":"Jaipur","PGMD":"Pragati Maidan","VSKP":"Visakhapatnam","TGP":"Tuljapur","MAS":"Chennai Central","CCT":"Kakinada Town","J":"Jalna","KTRA":"Kotra","YPR":"Yasvantpur Jn","DKJ":"Dornakal Jn","TVC":"Thiruvananthapuram Central","RVKH":"Ravindrakhani","SMVB":"Smvt Bengaluru","HDL":"Hodal","PTNR":"Patelnagar","SBC":"Ksr Bengaluru","ALLP":"Alleppey","CLE":"Chintapalli","MJRI":"Majri Jn","MML":"Madan Mahal","BGKT":"Bhagat Ki Kothi (Jodhpur)","MRA":"Morena","ERS":"Ernakulam Jn","LJN":"Lucknow Ne","NSZ":"Nishatpura","SNKB":"Sonkhamb","RU":"Renigunta Jn","DNR":"Danapur","AMLA":"Amla Jn","KMT":"Khammam"},"slug":"tamil-nadu-express-2026-09-18"}];
+/* ---------- Icons: Material Symbols ligature with a bundled SVG fallback ---------- */
+const ICONS = {
+  train:   ['train', '<rect x="6" y="3" width="12" height="14" rx="3"/><path d="M6 10h12M9 17l-2.5 4M15 17l2.5 4M8 21h8"/>'],
+  cross:   ['sync_alt', '<path d="M4 8h15l-3.5-3.5M20 16H5l3.5 3.5"/>'],
+  over:    ['fast_forward', '<path d="M4 6v12l8-6zM12 6v12l8-6z"/>'],
+  taken:   ['fast_rewind', '<path d="M20 6v12l-8-6zM12 6v12l-8-6z"/>'],
+  flag:    ['flag', '<path d="M6 21V4h11l-1.5 4L17 12H6"/>'],
+  pin:     ['location_on', '<path d="M12 21s-7-6.2-7-11.2a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/>'],
+  sun:     ['light_mode', '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'],
+  moon:    ['dark_mode', '<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>'],
+  expand:  ['expand_more', '<path d="M6 9l6 6 6-6"/>']
+};
+const ic = (name, sm) =>
+  `<span class="ic${sm ? ' sm' : ''}" aria-hidden="true"><span class="ms">${ICONS[name][0]}</span><svg viewBox="0 0 24 24">${ICONS[name][1]}</svg></span>`;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const DOW = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+function fdate(iso, withDow) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const dt = new Date(y, m - 1, d);
+  return (withDow ? DOW[dt.getDay()] + ' ' : '') + MON[m - 1] + ' ' + d;
+}
+function mins(iso, hm) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const [h, mi] = hm.split(':').map(Number);
+  return Math.round(Date.UTC(y, m - 1, d, h, mi) / 60000);
+}
+function dur(m) { const h = Math.floor(m / 60), r = m % 60; return h ? (r ? `${h} h ${r} min` : `${h} h`) : `${r} min`; }
+const sname = (leg, code) => leg.names[code] || code;
+
+/* ---------- Leg selector ---------- */
+let current = 0;
+
+function render() {
+  const leg = LEGS[current];
+  const tr = leg.train;
+  const h0 = leg.halts[0], hN = leg.halts[leg.halts.length - 1];
+  const total = mins(hN.date, hN.arr) - mins(h0.date, h0.dep);
+
+  // halts as chips
+  document.getElementById('route').innerHTML = leg.halts.map((h, i) =>
+    `<span class="chip-route${i === 0 ? ' home' : i === leg.halts.length - 1 ? ' peak' : ''}" title="${esc(h.name)}">${esc(h.code)}</span>` +
+    (i < leg.halts.length - 1 ? '<span class="hop">›</span>' : '')).join('');
+
+  const crossings = leg.events.filter(e => e.kind === 'crossing');
+  const over = leg.events.filter(e => e.kind === 'overtake');
+  document.getElementById('stats').innerHTML = [
+    [crossings.length, 'Crossings'],
+    [over.length, 'Overtakes'],
+    [Math.round(hN.km - h0.km) + ' km', 'Distance'],
+    [dur(total), 'On the train']
+  ].map(([n, l]) => `<div class="stat"><div class="n">${esc(n)}</div><div class="l">${esc(l)}</div></div>`).join('');
+
+  // group events by stretch between consecutive halts
+  const tl = document.getElementById('timeline');
+  let html = '', lastDay = null;
+  for (let i = 0; i < leg.halts.length; i++) {
+    const h = leg.halts[i], next = leg.halts[i + 1];
+    if (h.date !== lastDay) { html += `<div class="day-sep"><span>${fdate(h.date, true)}</span></div>`; lastDay = h.date; }
+    const depM = h.dep ? mins(h.date, h.dep) : null;
+    if (!next) {
+      html += `<section class="stretch"><div class="stretch-head">
+        <div class="time-badge arr"><span class="d">arr</span><span class="t">${esc(h.arr)}</span></div>
+        <div><h4>${esc(h.name)}</h4><div class="sub">Journey's end · ${Math.round(h.km - h0.km)} km from ${esc(h0.name)}</div></div>
+      </div></section>`;
+      break;
+    }
+    const arrM = mins(next.date, next.arr);
+    const evs = leg.events.filter(e => { const m = mins(e.date, e.time); return m >= (h.arr ? mins(h.date, h.arr) : depM) && m < arrM; });
+    const halt = h.arr && h.dep ? `halt ${dur(mins(h.date, h.dep) - mins(h.date, h.arr))}` : '';
+    html += `<section class="stretch"><div class="stretch-head">
+      <div class="time-badge"><span class="d">dep</span><span class="t">${esc(h.dep)}</span></div>
+      <div><h4>${esc(h.name)}${i > 0 && h.arr ? ` <span class="sub">arr ${esc(h.arr)}${halt ? ', ' + halt : ''}</span>` : ''}</h4>
+      <div class="sub">to <b>${esc(next.name)}</b> · ${Math.round(next.km - h.km)} km · ${dur(arrM - depM)} · ${evs.length ? evs.length + (evs.length === 1 ? ' train' : ' trains') : 'nothing scheduled'}</div></div>
+    </div>`;
+    if (evs.length) {
+      html += '<ul class="items">' + evs.map(e => item(leg, e, h)).join('') + '</ul>';
+    } else {
+      html += '<div class="empty">No scheduled crossing on this stretch.</div>';
+    }
+    html += '</section>';
+  }
+  tl.innerHTML = html;
+}
+
+function item(leg, e, h) {
+  const cross = e.kind === 'crossing';
+  const cls = cross ? 'c-cross' : (e.who === 'user' ? 'c-over' : 'c-taken');
+  const icon = cross ? 'cross' : (e.who === 'user' ? 'over' : 'taken');
+  let where;
+  if (e.halted) where = `at ${esc(sname(leg, e.halted))}, while you are halted`;
+  else if (e.at) where = `at ${esc(sname(leg, e.at))}`;
+  else if (e.between) where = `between ${esc(sname(leg, e.between[0]))} and ${esc(sname(leg, e.between[1]))}`;
+  else where = '';
+  if (!cross) where = where.replace(/^between (.*) and (.*)$/, 'near $1');
+  const chip = cross ? (e.halted ? '<span class="chip halt">At your halt</span>' : '')
+                     : (e.who === 'user' ? '<span class="chip over">You overtake it</span>' : '<span class="chip taken">It overtakes you</span>');
+  if (e.leapfrog) where += ` · the timetable has you passing each other ${e.leapfrog} times since ${esc(e.since)}; this is the last`;
+  const dateNote = e.date !== h.date ? `<small>${fdate(e.date)}</small>` : '';
+  return `<li class="item">
+    <div class="avatar ${cls}">${ic(icon)}</div>
+    <div class="when">${esc(e.time)}${dateNote}</div>
+    <div class="what">
+      <div class="t"><span class="no">${esc(e.no)}</span> ${esc(e.name)}${chip}</div>
+      <div class="m">${esc(sname(leg, e.src))}<span class="arrow">→</span>${esc(sname(leg, e.dst))}</div>
+      <div class="note">${where}</div>
+    </div>
+  </li>`;
+}
+
+/* ---------- Theme toggle & app bar shadow ---------- */
+const themeBtn = document.getElementById('theme');
+function paintTheme() {
+  const dark = document.documentElement.dataset.theme === 'dark' ||
+    (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+  themeBtn.innerHTML = ic(dark ? 'sun' : 'moon');
+}
+themeBtn.addEventListener('click', () => {
+  const dark = document.documentElement.dataset.theme === 'dark' ||
+    (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+  document.documentElement.dataset.theme = dark ? 'light' : 'dark';
+  try { localStorage.setItem('itinerary-theme', document.documentElement.dataset.theme); } catch (e) {}
+  paintTheme();
+});
+paintTheme();
+addEventListener('scroll', () => document.getElementById('appbar').classList.toggle('scrolled', scrollY > 4), { passive: true });
+if (document.fonts) document.fonts.load('24px "Material Symbols Rounded"').then(f => { if (f.length) document.documentElement.classList.add('ms-ready'); }).catch(() => {});
+render();
+
+</script>
+</body>
+</html>

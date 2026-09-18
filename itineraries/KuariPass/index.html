@@ -254,6 +254,8 @@
   .chip.nb { background: var(--md-error-container); color: var(--md-on-error-container); }
   .chip.chk { background: var(--md-amber-container); color: var(--md-on-amber-container); }
   .chip.pend { background: var(--md-tertiary-container); color: var(--md-on-tertiary-container); }
+  .chip.link { gap: 4px; padding-left: 6px; text-decoration: none; background: var(--md-secondary-container); color: var(--md-on-secondary-container); }
+  .chip.link:hover { background: var(--md-primary-container); color: var(--md-on-primary-container); }
 
   .night {
     display: flex; align-items: center; gap: 12px; padding: 12px 16px 14px; margin-top: 4px;
@@ -297,6 +299,7 @@
   .chip.info { background: var(--md-surface-container-low); color: var(--md-on-surface-variant); border: 1px solid var(--md-outline-variant); }
 
   footer { margin-top: 40px; text-align: center; font: 400 12px/16px var(--font); color: var(--md-on-surface-variant); }
+  footer a { color: var(--md-primary); }
 
   @media (max-width: 560px) {
     .hero h2 { font-size: 28px; line-height: 36px; }
@@ -338,7 +341,7 @@
   <div id="notice"></div>
   <main id="timeline"></main>
 
-  <footer>Draft itinerary · last edited Sep 15, 2026</footer>
+  <footer>Draft itinerary · last edited Sep 18, 2026 · <a href="../../trainjourneys/">Train journeys</a></footer>
 </div>
 
 <script>
@@ -446,7 +449,8 @@ const DAYS = [
       // Srivathsan
       { who: SRI, kind: 'bus', from: 'Dindigul', to: 'Trichy', meta: 'TNSTC bus',
         note: 'Allow 2 to 2.5 hours. The Cholan leaves Trichy Junction at 12:10.' },
-      { who: SRI, kind: 'train', from: 'Trichy Junction', to: 'Chennai Egmore', meta: '22676 Cholan Express · 12:10 → 19:25' },
+      { who: SRI, kind: 'train', from: 'Trichy Junction', to: 'Chennai Egmore', meta: '22676 Cholan Express · 12:10 → 19:25',
+        link: { href: '../../trainjourneys/chozhan-express-2026-09-18/', label: 'Crossings' } },
       { who: SRI, kind: 'train', from: 'Chennai Egmore', to: 'Chennai Park', meta: 'Suburban local towards Beach · one stop' },
       { who: SRI, kind: 'walk', from: 'Chennai Park', to: 'Chennai Central', meta: 'Cross the road' },
       // Shane Rex, Sooriya
@@ -463,7 +467,8 @@ const DAYS = [
       { who: ['gurusaran'], kind: 'train', from: 'KSR Bengaluru', to: 'Chennai Central', meta: '22626 Double Decker Express · 13:30 → 19:45' },
       // Everyone
       { kind: 'meet', title: 'All five meet at Chennai Central', meta: 'Before 22:00' },
-      { kind: 'train', from: 'Chennai Central', to: 'New Delhi', meta: '12621 Tamilnadu SF Express · departs 22:00' }
+      { kind: 'train', from: 'Chennai Central', to: 'New Delhi', meta: '12621 Tamilnadu SF Express · departs 22:00',
+        link: { href: '../../trainjourneys/tamil-nadu-express-2026-09-18/', label: 'Crossings' } }
     ],
     night: { kind: 'train', label: 'On the Tamilnadu SF Express' }
   },
@@ -602,7 +607,8 @@ const DAYS = [
       { who: SRI, kind: 'arrive', title: 'Reach Kashmir Gate ISBT', meta: '~02:00' },
       { who: SRI, kind: 'transfer', from: 'Kashmir Gate', to: 'Hazrat Nizamuddin', meta: 'Bus if there is one, else auto or cab · leave ~02:30, reach before 05:00',
         note: 'Metro isn\'t running at this hour.' },
-      { who: SRI, kind: 'train', from: 'Hazrat Nizamuddin', to: 'Dindigul', meta: '12652 Tamil Nadu Sampark Kranti Express · departs 05:20' }
+      { who: SRI, kind: 'train', from: 'Hazrat Nizamuddin', to: 'Dindigul', meta: '12652 Tamil Nadu Sampark Kranti Express · departs 05:20',
+        link: { href: '../../trainjourneys/sampark-kranti-2026-10-01/', label: 'Crossings' } }
     ],
     night: { kind: 'train', label: 'On the train' }
   },
@@ -696,7 +702,8 @@ function itemHTML(it) {
   const title = it.from
     ? `${esc(it.from)}<span class="arrow">→</span>${esc(it.to)}`
     : esc(it.title);
-  const chip = it.status ? CHIP[it.status] : '';
+  const chip = (it.status ? CHIP[it.status] : '') +
+    (it.link ? `<a class="chip link" href="${esc(it.link.href)}">${ic('train', true)}${esc(it.link.label)}</a>` : '');
   return `<li class="item">
     <div class="avatar ${k.cls}">${ic(k.icon)}</div>
     <div class="what">
